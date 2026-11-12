@@ -1,0 +1,501 @@
+claim_id,policy_id,policy_type,claim_amount,annual_premium,policy_tenure_months,customer_age,incident_type,incident_severity,previous_claims,documentation_status,policy_active,premium_payment_status,claim_submission_delay,incident_reported,repair_or_treatment_estimate,claim_approval,claim_to_premium_ratio,claim_to_estimate_ratio,policy_tenure_category,submission_delay_category,previous_claim_category,label
+CLM-0000005,POL-100005,Health,24826.44,3439.08,72,32,Outpatient Treatment,Medium,1,Complete,Yes,Paid,4,Yes,22858.18,Approved,7.2189,1.0861,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0000024,POL-100024,Life,9797.85,2876.57,22,70,Accidental Death,Low,0,Complete,Yes,Paid,18,Yes,8711.02,Approved,3.4061,1.1248,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0000034,POL-100034,Motor,6179.09,2293.58,3,25,Theft/Burglary,Low,0,Complete,Yes,Paid,12,Yes,5219.8,Approved,2.6941,1.1838,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0000036,POL-100036,Health,3292.88,1407.8,9,33,Outpatient Treatment,Medium,0,Complete,Yes,Paid,7,Yes,2728.89,Approved,2.339,1.2067,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0000048,POL-100048,Motor,19781.05,856.07,25,40,Windshield Damage,Medium,0,Missing,Yes,Paid,12,Yes,14866.99,Rejected,23.1068,1.3305,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0000049,POL-100049,Health,20962.42,2479.85,19,29,Medical Emergency,Low,0,Partial,Yes,Paid,11,Yes,17366.95,Approved,8.4531,1.207,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0000052,POL-100052,Health,15930.95,1910.12,81,20,Surgical Procedure,Low,2,Complete,Yes,Paid,10,Yes,14915.74,Approved,8.3403,1.0681,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0000054,POL-100054,Motor,36558.57,2247.78,12,46,Theft/Burglary,High,1,Partial,Yes,Paid,0,Yes,31782.92,Rejected,16.2643,1.1503,Established (12-48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0000061,POL-100061,Health,7080.13,3660.53,46,55,Hospitalization,Medium,1,Complete,Yes,Paid,1,Yes,5668.66,Approved,1.9342,1.249,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0000074,POL-100074,Property,82655.29,2616.57,45,44,Water Damage,High,2,Partial,Yes,Paid,20,Yes,76805.82,Rejected,31.5892,1.0762,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0000086,POL-100086,Motor,8559.49,1114.58,95,40,Windshield Damage,Medium,0,Missing,Yes,Paid,7,Yes,6839.31,Rejected,7.6796,1.2515,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0000089,POL-100089,Health,5656.91,2641.47,10,28,Outpatient Treatment,Low,2,Complete,Yes,Paid,4,Yes,4851.52,Approved,2.1416,1.166,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0000091,POL-100091,Health,4506.63,2061.95,65,29,Hospitalization,Low,1,Complete,Yes,Paid,10,Yes,5143.56,Approved,2.1856,0.8762,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0000094,POL-100094,Health,7706.03,3577.9,22,32,Medical Emergency,Medium,1,Complete,Yes,Paid,58,No,8485.1,Rejected,2.1538,0.9082,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0000100,POL-100100,Health,39025.53,3657.07,15,27,Hospitalization,Medium,1,Complete,Yes,Paid,7,Yes,31384.84,Approved,10.6713,1.2435,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0000112,POL-100112,Motor,3825.66,1720.45,6,27,Vandalism,Medium,0,Partial,Yes,Paid,15,Yes,4168.85,Rejected,2.2236,0.9177,New (< 12m),Delayed (> 14d),None (0),0.0
+CLM-0000113,POL-100113,Property,33317.64,862.75,56,30,Fire Damage,Low,4,Complete,Yes,Pending,3,Yes,29458.66,Approved,38.618,1.131,Mature (> 48m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0000128,POL-100128,Motor,8424.81,1313.94,10,32,Vehicle Collision,Medium,2,Missing,Yes,Paid,7,No,6501.93,Approved,6.4119,1.2957,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0000136,POL-100136,Motor,19813.52,760.1,4,28,Vehicle Collision,High,0,Missing,Yes,Paid,4,Yes,19139.83,Rejected,26.067,1.0352,New (< 12m),Normal (4-14d),None (0),0.0
+CLM-0000164,POL-100164,Property,19135.29,4198.4,52,28,Fire Damage,Medium,1,Partial,Yes,Paid,3,Yes,18174.31,Approved,4.5578,1.0529,Mature (> 48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0000170,POL-100170,Motor,7952.26,2464.1,11,47,Vehicle Collision,Low,0,Complete,Yes,Paid,0,Yes,6535.69,Approved,3.2272,1.2167,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0000181,POL-100181,Motor,7252.26,1582.74,18,66,Vehicle Collision,Medium,0,Complete,Yes,Pending,9,Yes,7091.88,Approved,4.5821,1.0226,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0000186,POL-100186,Life,19549.81,2364.64,17,35,Disability,Low,2,Complete,No,Paid,4,Yes,18892.59,Rejected,8.2676,1.0348,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0000188,POL-100188,Health,36485.35,2452.18,8,33,Hospitalization,Medium,3,Partial,Yes,Paid,10,Yes,31285.79,Approved,14.8787,1.1662,New (< 12m),Normal (4-14d),Frequent (3+),1.0
+CLM-0000202,POL-100202,Life,23032.22,2706.76,49,43,Terminal Illness,Low,0,Complete,Yes,Paid,23,Yes,25226.94,Approved,8.5091,0.913,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0000214,POL-100214,Motor,8061.99,1977.73,4,50,Vandalism,Low,1,Complete,Yes,Overdue,2,Yes,6835.91,Approved,4.0764,1.1794,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0000223,POL-100223,Health,5152.72,1351.98,47,63,Medical Emergency,Medium,1,Complete,Yes,Paid,2,Yes,4073.05,Rejected,3.8112,1.2651,Established (12-48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0000227,POL-100227,Health,28904.38,3400.38,11,59,Outpatient Treatment,Medium,4,Complete,Yes,Paid,1,Yes,23211.52,Approved,8.5003,1.2453,New (< 12m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0000252,POL-100252,Motor,2991.25,1884.1,15,51,Windshield Damage,High,1,Complete,Yes,Pending,19,No,2827.51,Rejected,1.5876,1.0579,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0000255,POL-100255,Motor,1581.68,1647.7,14,31,Windshield Damage,Low,0,Missing,Yes,Paid,4,Yes,1827.55,Rejected,0.9599,0.8655,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0000258,POL-100258,Motor,5574.08,2294.77,41,70,Vehicle Collision,Medium,3,Missing,Yes,Paid,25,Yes,5698.91,Approved,2.429,0.9781,Established (12-48m),Delayed (> 14d),Frequent (3+),1.0
+CLM-0000261,POL-100261,Motor,1846.81,1699.94,39,36,Vehicle Collision,Low,1,Complete,Yes,Pending,3,Yes,1644.59,Rejected,1.0864,1.123,Established (12-48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0000262,POL-100262,Life,50369.55,4417.96,42,48,Terminal Illness,Low,0,Complete,Yes,Paid,1,Yes,37980.55,Approved,11.4011,1.3262,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0000266,POL-100266,Health,7920.67,834.77,27,24,Surgical Procedure,Low,0,Partial,Yes,Paid,1,No,6901.44,Rejected,9.4884,1.1477,Established (12-48m),Immediate (<= 3d),None (0),0.0
+CLM-0000267,POL-100267,Life,99160.82,1890.33,6,50,Disability,High,0,Complete,No,Paid,16,Yes,95511.56,Rejected,52.4569,1.0382,New (< 12m),Delayed (> 14d),None (0),0.0
+CLM-0000273,POL-100273,Health,13777.59,1592.99,13,41,Outpatient Treatment,High,0,Complete,Yes,Paid,2,Yes,11037.79,Approved,8.6489,1.2482,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0000274,POL-100274,Health,23585.63,970.63,8,35,Medical Emergency,Low,4,Complete,Yes,Overdue,15,Yes,21405.59,Rejected,24.2993,1.1018,New (< 12m),Delayed (> 14d),Frequent (3+),0.0
+CLM-0000277,POL-100277,Motor,3252.46,794.33,1,44,Theft/Burglary,High,1,Complete,Yes,Paid,3,Yes,3634.52,Rejected,4.0946,0.8949,New (< 12m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0000282,POL-100282,Motor,7958.79,1183.28,29,57,Vehicle Collision,Low,0,Partial,Yes,Paid,17,No,9000.91,Rejected,6.726,0.8842,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0000286,POL-100286,Health,21608.62,3552.46,4,36,Outpatient Treatment,Low,0,Partial,Yes,Paid,9,Yes,21311.5,Approved,6.0827,1.0139,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0000288,POL-100288,Life,16328.47,2571.19,2,30,Critical Illness,Low,0,Partial,Yes,Paid,6,Yes,15195.79,Approved,6.3505,1.0745,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0000313,POL-100313,Motor,6133.54,771.32,38,30,Theft/Burglary,Medium,2,Partial,Yes,Paid,1,Yes,6258.56,Approved,7.952,0.98,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0000317,POL-100317,Health,46035.26,1378.18,23,42,Hospitalization,High,0,Partial,Yes,Paid,6,Yes,48650.38,Approved,33.4029,0.9462,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0000320,POL-100320,Health,28026.71,3189.42,26,34,Medical Emergency,Medium,0,Complete,Yes,Paid,18,Yes,23623.01,Approved,8.7874,1.1864,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0000325,POL-100325,Motor,14751.32,1265.67,141,59,Vehicle Collision,Low,5,Partial,Yes,Pending,1,Yes,13850.08,Rejected,11.6549,1.0651,Mature (> 48m),Immediate (<= 3d),Frequent (3+),0.0
+CLM-0000327,POL-100327,Property,28857.38,4079.07,1,31,Theft/Burglary,Low,3,Complete,Yes,Overdue,2,Yes,26199.74,Rejected,7.0745,1.1014,New (< 12m),Immediate (<= 3d),Frequent (3+),0.0
+CLM-0000333,POL-100333,Property,10093.59,1576.19,74,38,Fire Damage,Low,3,Complete,Yes,Paid,11,Yes,9332.09,Approved,6.4038,1.0816,Mature (> 48m),Normal (4-14d),Frequent (3+),1.0
+CLM-0000334,POL-100334,Motor,9270.59,1337.85,36,32,Windshield Damage,Low,0,Partial,Yes,Paid,6,No,10391.8,Rejected,6.9295,0.8921,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0000347,POL-100347,Life,79611.95,1270.45,40,47,Terminal Illness,Medium,0,Partial,Yes,Paid,11,Yes,62453.86,Rejected,62.6644,1.2747,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0000352,POL-100352,Motor,7908.65,1657.13,8,53,Theft/Burglary,Low,0,Complete,Yes,Paid,51,Yes,7017.13,Approved,4.7725,1.127,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0000370,POL-100370,Property,38018.76,3325.95,30,48,Theft/Burglary,Medium,0,Complete,No,Paid,13,Yes,37692.92,Rejected,11.4309,1.0086,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0000376,POL-100376,Life,46460.64,2601.46,11,43,Disability,Medium,1,Complete,Yes,Paid,2,Yes,40655.78,Approved,17.8594,1.1428,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0000384,POL-100384,Motor,10021.73,1133.83,75,59,Vehicle Collision,Medium,3,Partial,Yes,Paid,20,Yes,9247.75,Approved,8.8388,1.0837,Mature (> 48m),Delayed (> 14d),Frequent (3+),1.0
+CLM-0000385,POL-100385,Health,9493.94,1174.9,36,46,Hospitalization,Low,0,Complete,Yes,Pending,38,Yes,10822.31,Rejected,8.0806,0.8773,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0000387,POL-100387,Property,28916.94,1784.53,13,48,Fire Damage,Low,1,Complete,Yes,Paid,8,Yes,27523.53,Approved,16.2042,1.0506,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0000388,POL-100388,Motor,6796.18,1285.68,87,24,Windshield Damage,Medium,1,Complete,Yes,Overdue,0,Yes,7231.32,Approved,5.2861,0.9398,Mature (> 48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0000396,POL-100396,Property,8207.53,3609.36,95,40,Water Damage,Low,1,Partial,Yes,Paid,11,Yes,8004.84,Approved,2.274,1.0253,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0000409,POL-100409,Motor,7629.14,1186.35,131,44,Vehicle Collision,Low,0,Complete,No,Paid,23,Yes,8605.22,Rejected,6.4308,0.8866,Mature (> 48m),Delayed (> 14d),None (0),0.0
+CLM-0000415,POL-100415,Motor,2419.82,2485.54,40,52,Vehicle Collision,Low,0,Complete,Yes,Paid,2,Yes,1845.79,Approved,0.9736,1.311,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0000418,POL-100418,Health,9763.89,903.16,32,18,Medical Emergency,Low,0,Complete,Yes,Overdue,9,Yes,9831.44,Approved,10.8108,0.9931,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0000426,POL-100426,Life,62878.56,3258.58,56,30,Critical Illness,Medium,0,Complete,Yes,Paid,15,Yes,55951.33,Approved,19.2963,1.1238,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0000439,POL-100439,Life,106499.76,3173.14,2,30,Terminal Illness,High,0,Missing,Yes,Paid,20,No,80033.41,Rejected,33.5629,1.3307,New (< 12m),Delayed (> 14d),None (0),0.0
+CLM-0000442,POL-100442,Health,31468.31,3334.62,12,37,Outpatient Treatment,High,0,Complete,No,Paid,1,Yes,36571.72,Approved,9.4369,0.8605,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0000459,POL-100459,Health,28981.76,2503.85,5,64,Surgical Procedure,Low,2,Complete,Yes,Paid,16,Yes,21553.06,Approved,11.5749,1.3447,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0000477,POL-100477,Health,15831.16,1213.88,1,56,Hospitalization,Medium,2,Complete,Yes,Paid,3,Yes,15567.95,Approved,13.0418,1.0169,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0000494,POL-100494,Life,36607.84,2420.61,19,49,Terminal Illness,Low,0,Complete,Yes,Paid,16,Yes,35013.13,Approved,15.1234,1.0455,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0000514,POL-100514,Health,6924.55,3015.81,49,18,Medical Emergency,Low,2,Partial,Yes,Paid,4,Yes,7533.92,Approved,2.2961,0.9191,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0000521,POL-100521,Life,37618.89,1480.26,6,46,Critical Illness,Low,0,Complete,Yes,Paid,24,Yes,28642.3,Approved,25.4137,1.3134,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0000526,POL-100526,Property,59405.25,2584.14,68,37,Natural Hazard,High,1,Complete,Yes,Paid,3,Yes,44856.07,Approved,22.9884,1.3244,Mature (> 48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0000545,POL-100545,Motor,5755.82,2489.05,12,42,Theft/Burglary,Low,0,Missing,Yes,Paid,19,Yes,4525.94,Rejected,2.3125,1.2717,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0000566,POL-100566,Health,6714.61,2798.2,107,46,Outpatient Treatment,Low,0,Missing,Yes,Paid,14,Yes,7143.6,Rejected,2.3996,0.9399,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0000584,POL-100584,Health,3284.69,3128.53,13,29,Surgical Procedure,Low,3,Complete,Yes,Overdue,6,Yes,2627.21,Approved,1.0499,1.2503,Established (12-48m),Normal (4-14d),Frequent (3+),1.0
+CLM-0000598,POL-100598,Property,84096.73,3856.43,33,54,Natural Hazard,High,1,Partial,Yes,Paid,28,No,66644.94,Rejected,21.8069,1.2619,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0000603,POL-100603,Life,86067.83,3790.9,8,79,Disability,High,0,Complete,Yes,Pending,15,Yes,73202.83,Approved,22.7038,1.1757,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0000616,POL-100616,Motor,1193.24,931.88,3,55,Windshield Damage,Low,2,Complete,Yes,Paid,11,Yes,1185.88,Approved,1.2805,1.0062,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0000636,POL-100636,Property,26219.97,1661.23,46,46,Theft/Burglary,Low,3,Missing,Yes,Overdue,0,Yes,26185.64,Rejected,15.7835,1.0013,Established (12-48m),Immediate (<= 3d),Frequent (3+),0.0
+CLM-0000639,POL-100639,Health,3162.45,1056.18,13,25,Outpatient Treatment,Low,3,Missing,Yes,Pending,16,Yes,2601.54,Rejected,2.9942,1.2156,Established (12-48m),Delayed (> 14d),Frequent (3+),0.0
+CLM-0000640,POL-100640,Motor,23900.63,780.57,2,23,Vandalism,Medium,3,Complete,Yes,Paid,21,Yes,18480.6,Rejected,30.6195,1.2933,New (< 12m),Delayed (> 14d),Frequent (3+),0.0
+CLM-0000650,POL-100650,Life,65572.45,4330.25,19,34,Disability,Medium,0,Missing,Yes,Pending,13,Yes,50765.08,Rejected,15.1429,1.2917,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0000655,POL-100655,Property,40261.78,3356.19,15,21,Theft/Burglary,Medium,2,Complete,Yes,Overdue,4,Yes,40962.25,Approved,11.9963,0.9829,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0000658,POL-100658,Life,38296.43,1110.65,12,67,Critical Illness,Low,0,Complete,Yes,Paid,20,Yes,29576.03,Approved,34.4811,1.2948,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0000661,POL-100661,Motor,9105.98,893.62,150,22,Vandalism,High,1,Partial,Yes,Paid,10,Yes,8141.6,Approved,10.19,1.1185,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0000671,POL-100671,Motor,24764.64,1383.93,5,34,Vehicle Collision,Medium,1,Complete,Yes,Paid,22,No,21125.6,Approved,17.8944,1.1723,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0000675,POL-100675,Property,3301.61,3167.4,7,32,Natural Hazard,Low,1,Complete,Yes,Pending,22,Yes,3783.07,Approved,1.0424,0.8727,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0000677,POL-100677,Health,18331.26,3280.76,19,46,Medical Emergency,Low,0,Missing,Yes,Paid,0,Yes,17409.53,Approved,5.5875,1.0529,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0000682,POL-100682,Motor,23816.36,547.92,23,38,Windshield Damage,High,0,Complete,No,Paid,24,Yes,20883.17,Rejected,43.4669,1.1405,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0000689,POL-100689,Motor,18252.13,2287.9,126,55,Windshield Damage,Low,0,Complete,Yes,Overdue,24,No,15095.18,Approved,7.9777,1.2091,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0000714,POL-100714,Health,2041.64,1371.07,67,38,Outpatient Treatment,Low,0,Partial,Yes,Overdue,3,Yes,2287.22,Approved,1.4891,0.8926,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0000721,POL-100721,Motor,5902.43,1218.33,35,31,Vehicle Collision,Low,0,Complete,Yes,Paid,11,No,5107.44,Approved,4.8447,1.1557,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0000745,POL-100745,Health,10367.22,832.59,26,43,Surgical Procedure,Low,2,Complete,No,Overdue,38,Yes,9179.89,Rejected,12.4518,1.1293,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0000754,POL-100754,Motor,3751.23,1228.13,18,29,Vehicle Collision,Low,0,Partial,No,Pending,9,Yes,3494.29,Rejected,3.0544,1.0735,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0000757,POL-100757,Life,37454.11,2334.71,3,49,Disability,Low,0,Complete,Yes,Paid,0,No,38091.18,Approved,16.0423,0.9833,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0000768,POL-100768,Health,16215.62,2979.23,34,48,Hospitalization,High,0,Complete,Yes,Paid,1,No,14227.5,Approved,5.4429,1.1397,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0000773,POL-100773,Property,40128.21,839.32,26,46,Fire Damage,High,2,Complete,Yes,Overdue,4,Yes,42950.74,Approved,47.8104,0.9343,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0000777,POL-100777,Health,1354.34,2141.38,10,30,Hospitalization,Low,0,Complete,Yes,Pending,2,Yes,1011.56,Rejected,0.6325,1.3389,New (< 12m),Immediate (<= 3d),None (0),0.0
+CLM-0000784,POL-100784,Health,23499.73,723.48,20,31,Medical Emergency,High,0,Complete,Yes,Pending,14,Yes,21961.03,Approved,32.4815,1.0701,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0000799,POL-100799,Motor,909.15,995.12,26,23,Theft/Burglary,Medium,0,Complete,Yes,Overdue,7,No,1007.93,Rejected,0.9136,0.902,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0000810,POL-100810,Health,14761.31,1013.11,6,30,Outpatient Treatment,Medium,3,Missing,Yes,Paid,6,Yes,13689.99,Rejected,14.5703,1.0783,New (< 12m),Normal (4-14d),Frequent (3+),0.0
+CLM-0000811,POL-100811,Health,7819.43,3021.57,1,23,Medical Emergency,Low,0,Partial,Yes,Paid,34,Yes,7429.75,Rejected,2.5879,1.0524,New (< 12m),Delayed (> 14d),None (0),0.0
+CLM-0000812,POL-100812,Health,34617.44,3206.43,14,50,Medical Emergency,Medium,0,Missing,Yes,Paid,1,Yes,29523.43,Approved,10.7963,1.1725,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0000815,POL-100815,Health,10909.82,3172.03,22,18,Outpatient Treatment,Low,0,Complete,Yes,Paid,6,Yes,11197.2,Approved,3.4394,0.9743,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0000816,POL-100816,Health,16570.43,965.83,113,82,Hospitalization,High,2,Complete,Yes,Overdue,5,Yes,13417.19,Rejected,17.1567,1.235,Mature (> 48m),Normal (4-14d),Few (1-2),0.0
+CLM-0000817,POL-100817,Health,31451.16,2812.91,36,48,Medical Emergency,High,3,Complete,Yes,Paid,0,Yes,25107.91,Approved,11.181,1.2526,Established (12-48m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0000821,POL-100821,Motor,5139.21,1445.85,37,61,Windshield Damage,Low,1,Complete,Yes,Paid,30,Yes,5049.67,Approved,3.5545,1.0177,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0000827,POL-100827,Health,17943.57,1924.8,1,55,Surgical Procedure,Low,0,Complete,Yes,Overdue,15,Yes,13538.8,Approved,9.3223,1.3253,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0000841,POL-100841,Property,11959.09,942.03,24,33,Theft/Burglary,Low,3,Complete,Yes,Paid,10,No,12654.55,Approved,12.695,0.945,Established (12-48m),Normal (4-14d),Frequent (3+),1.0
+CLM-0000844,POL-100844,Property,31496.61,3811.65,22,42,Natural Hazard,Low,0,Complete,Yes,Pending,4,Yes,27289.77,Approved,8.2632,1.1542,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0000845,POL-100845,Life,131827.97,2255.47,26,28,Disability,High,2,Partial,Yes,Paid,26,Yes,112770.86,Rejected,58.4481,1.169,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0000847,POL-100847,Motor,13408.36,1708.04,92,39,Vandalism,Low,0,Partial,Yes,Paid,13,No,13644.92,Approved,7.8501,0.9827,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0000851,POL-100851,Health,40942.65,1140.92,26,24,Surgical Procedure,Medium,0,Partial,Yes,Paid,3,Yes,31702.53,Rejected,35.8856,1.2915,Established (12-48m),Immediate (<= 3d),None (0),0.0
+CLM-0000856,POL-100856,Motor,6229.37,817.93,34,28,Windshield Damage,Medium,0,Complete,Yes,Paid,7,Yes,7130.08,Approved,7.616,0.8737,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0000885,POL-100885,Life,46276.67,2741.37,13,39,Disability,Low,1,Partial,Yes,Pending,8,Yes,44243.8,Rejected,16.8809,1.0459,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0000888,POL-100888,Health,24657.2,1858.39,19,62,Hospitalization,Medium,0,Partial,Yes,Overdue,0,Yes,25721.65,Rejected,13.268,0.9586,Established (12-48m),Immediate (<= 3d),None (0),0.0
+CLM-0000893,POL-100893,Health,30777.01,1701.99,44,37,Medical Emergency,Medium,0,Partial,No,Paid,4,Yes,26035.23,Rejected,18.083,1.1821,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0000896,POL-100896,Health,33177.02,3398.22,4,43,Medical Emergency,Medium,5,Complete,Yes,Paid,0,Yes,32498.49,Approved,9.7631,1.0209,New (< 12m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0000908,POL-100908,Property,18528.6,2783.62,169,32,Natural Hazard,Medium,1,Partial,Yes,Pending,12,No,15504.25,Rejected,6.6563,1.1951,Mature (> 48m),Normal (4-14d),Few (1-2),0.0
+CLM-0000914,POL-100914,Property,24405.26,3185.39,41,52,Natural Hazard,Medium,1,Complete,Yes,Overdue,11,No,27793.11,Rejected,7.6616,0.8781,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0000922,POL-100922,Health,34965.4,3704.94,1,34,Outpatient Treatment,High,1,Missing,Yes,Paid,16,No,34113.77,Rejected,9.4375,1.025,New (< 12m),Delayed (> 14d),Few (1-2),0.0
+CLM-0000924,POL-100924,Motor,8272.75,613.43,11,38,Theft/Burglary,Low,2,Complete,Yes,Paid,12,Yes,6735.96,Approved,13.4861,1.2281,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0000925,POL-100925,Health,14201.21,1384.7,10,47,Surgical Procedure,Low,0,Complete,Yes,Paid,8,Yes,12145.19,Approved,10.2558,1.1693,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0000929,POL-100929,Health,17134.72,2659.62,16,26,Medical Emergency,Low,2,Complete,Yes,Paid,15,Yes,18795.76,Approved,6.4425,0.9116,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0000930,POL-100930,Motor,4664.46,664.4,48,26,Vandalism,Medium,0,Complete,Yes,Paid,5,Yes,4599.25,Approved,7.0206,1.0142,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0000934,POL-100934,Life,42769.54,4965.87,35,25,Disability,Medium,2,Complete,Yes,Paid,9,Yes,48750.73,Approved,8.6127,0.8773,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0000935,POL-100935,Health,2944.28,604.59,47,51,Medical Emergency,Low,0,Complete,Yes,Paid,2,No,3173.68,Approved,4.8699,0.9277,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0000940,POL-100940,Life,29618.72,928.03,68,25,Critical Illness,Medium,0,Complete,No,Overdue,5,Yes,34425.0,Rejected,31.9157,0.8604,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0000948,POL-100948,Health,44735.62,3410.29,18,19,Hospitalization,High,0,Complete,Yes,Paid,10,Yes,39179.7,Approved,13.1178,1.1418,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0000953,POL-100953,Health,63337.48,2394.86,26,56,Outpatient Treatment,High,1,Complete,Yes,Paid,3,Yes,50461.43,Approved,26.4473,1.2552,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0000959,POL-100959,Life,73616.92,2877.84,33,52,Terminal Illness,Medium,4,Complete,Yes,Paid,8,Yes,71939.16,Approved,25.5806,1.0233,Established (12-48m),Normal (4-14d),Frequent (3+),1.0
+CLM-0000963,POL-100963,Health,7385.49,891.37,77,68,Hospitalization,Medium,1,Complete,Yes,Paid,2,Yes,7570.59,Approved,8.2855,0.9756,Mature (> 48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0000976,POL-100976,Life,39089.44,1136.96,3,51,Disability,Medium,0,Missing,Yes,Paid,22,Yes,37920.27,Approved,34.3807,1.0308,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0000989,POL-100989,Health,40746.45,2781.56,34,18,Surgical Procedure,High,0,Missing,Yes,Paid,30,Yes,34037.18,Approved,14.6488,1.1971,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0000992,POL-100992,Motor,20475.36,1581.99,41,27,Theft/Burglary,Medium,0,Complete,Yes,Paid,17,Yes,18381.53,Approved,12.9428,1.1139,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0000994,POL-100994,Life,21456.87,4404.35,48,46,Terminal Illness,Low,1,Partial,Yes,Overdue,35,No,18699.37,Rejected,4.8717,1.1475,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0001002,POL-101002,Health,4373.43,1919.47,21,48,Surgical Procedure,Low,0,Complete,Yes,Pending,12,Yes,3562.04,Approved,2.2785,1.2278,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0001026,POL-101026,Motor,3069.6,535.24,5,40,Vehicle Collision,Low,2,Complete,Yes,Paid,14,Yes,2354.14,Approved,5.735,1.3039,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0001029,POL-101029,Motor,11300.97,2138.74,30,50,Theft/Burglary,Low,1,Partial,Yes,Paid,26,Yes,11185.79,Rejected,5.2839,1.0103,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0001043,POL-101043,Health,1920.8,3387.62,15,33,Surgical Procedure,Low,0,Complete,Yes,Paid,9,Yes,1995.26,Approved,0.567,0.9627,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0001047,POL-101047,Health,43602.3,1602.91,46,37,Medical Emergency,Medium,0,Complete,Yes,Paid,4,Yes,33508.61,Approved,27.202,1.3012,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0001061,POL-101061,Motor,11776.31,1998.21,78,18,Vehicle Collision,Low,2,Complete,Yes,Paid,22,Yes,11705.01,Approved,5.8934,1.0061,Mature (> 48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0001073,POL-101073,Property,2559.45,3728.81,42,20,Natural Hazard,Medium,1,Complete,Yes,Paid,14,Yes,2029.36,Approved,0.6864,1.2612,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0001075,POL-101075,Health,1628.27,1522.1,42,67,Hospitalization,Medium,0,Complete,Yes,Paid,5,Yes,1905.28,Approved,1.0698,0.8546,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0001077,POL-101077,Property,1889.39,4095.82,26,44,Water Damage,Low,0,Complete,Yes,Paid,4,Yes,1730.49,Rejected,0.4613,1.0918,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0001080,POL-101080,Motor,11437.67,1351.56,15,48,Vandalism,Low,0,Partial,Yes,Overdue,8,Yes,12182.63,Rejected,8.4626,0.9389,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0001133,POL-101133,Life,61241.97,1286.39,82,51,Critical Illness,High,3,Missing,Yes,Paid,14,Yes,60077.84,Rejected,47.6076,1.0194,Mature (> 48m),Normal (4-14d),Frequent (3+),0.0
+CLM-0001137,POL-101137,Motor,21284.55,1541.73,35,61,Windshield Damage,Low,3,Missing,Yes,Paid,4,Yes,15861.26,Rejected,13.8056,1.3419,Established (12-48m),Normal (4-14d),Frequent (3+),0.0
+CLM-0001169,POL-101169,Motor,17142.78,2339.7,14,29,Vehicle Collision,High,1,Partial,No,Paid,27,Yes,18484.01,Rejected,7.3269,0.9274,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0001174,POL-101174,Life,49026.96,1910.97,9,41,Accidental Death,Low,0,Partial,Yes,Paid,17,Yes,42832.22,Approved,25.6555,1.1446,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0001176,POL-101176,Property,55392.55,1686.48,9,39,Natural Hazard,Medium,3,Complete,Yes,Paid,11,Yes,48401.49,Rejected,32.8451,1.1444,New (< 12m),Normal (4-14d),Frequent (3+),0.0
+CLM-0001177,POL-101177,Motor,14753.42,1750.32,69,61,Windshield Damage,Low,0,Complete,Yes,Paid,2,No,11317.16,Approved,8.429,1.3036,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0001179,POL-101179,Property,9913.99,3113.53,10,53,Water Damage,Low,0,Complete,Yes,Pending,16,Yes,10277.1,Approved,3.1842,0.9647,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0001184,POL-101184,Motor,22845.73,1753.61,70,28,Vehicle Collision,High,0,Missing,Yes,Overdue,4,Yes,17131.41,Rejected,13.0278,1.3336,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0001185,POL-101185,Property,2053.19,1857.65,30,50,Fire Damage,Low,1,Complete,Yes,Paid,4,Yes,1766.91,Approved,1.1053,1.162,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0001195,POL-101195,Property,13121.9,2753.5,2,37,Theft/Burglary,Low,0,Partial,Yes,Paid,2,Yes,12601.98,Approved,4.7655,1.0413,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0001199,POL-101199,Property,14937.57,1630.08,60,21,Theft/Burglary,Medium,0,Partial,Yes,Paid,2,Yes,16982.66,Approved,9.1637,0.8796,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0001206,POL-101206,Life,78556.73,1689.84,37,20,Critical Illness,Medium,2,Missing,Yes,Paid,2,Yes,80324.03,Approved,46.4877,0.978,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001208,POL-101208,Motor,20964.02,586.13,30,40,Vandalism,Medium,1,Complete,Yes,Paid,8,Yes,16562.17,Rejected,35.7668,1.2658,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0001224,POL-101224,Life,35403.95,1920.59,28,49,Critical Illness,High,1,Complete,Yes,Pending,3,Yes,27957.3,Approved,18.4339,1.2664,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001237,POL-101237,Motor,7203.29,1891.02,3,61,Vehicle Collision,Low,0,Complete,Yes,Paid,2,No,7132.49,Approved,3.8092,1.0099,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0001241,POL-101241,Motor,13699.65,2273.98,56,43,Windshield Damage,Medium,3,Partial,Yes,Paid,42,No,14418.03,Approved,6.0245,0.9502,Mature (> 48m),Delayed (> 14d),Frequent (3+),1.0
+CLM-0001246,POL-101246,Health,15600.99,1772.89,8,32,Outpatient Treatment,Medium,1,Complete,Yes,Paid,2,No,17081.15,Approved,8.7998,0.9133,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001252,POL-101252,Property,19560.87,1776.77,2,31,Water Damage,Medium,0,Complete,No,Paid,2,Yes,19765.89,Rejected,11.0092,0.9896,New (< 12m),Immediate (<= 3d),None (0),0.0
+CLM-0001277,POL-101277,Motor,13588.42,1676.65,32,54,Vandalism,Low,6,Complete,Yes,Paid,44,Yes,12332.44,Approved,8.1045,1.1018,Established (12-48m),Delayed (> 14d),Frequent (3+),1.0
+CLM-0001292,POL-101292,Health,2057.89,1602.5,31,63,Surgical Procedure,Medium,2,Complete,Yes,Paid,6,Yes,1882.74,Approved,1.2842,1.093,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0001297,POL-101297,Health,15573.69,1211.14,14,41,Hospitalization,Low,4,Complete,Yes,Paid,1,Yes,13913.33,Approved,12.8587,1.1193,Established (12-48m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0001312,POL-101312,Motor,11829.31,1379.23,186,38,Theft/Burglary,Low,0,Missing,Yes,Paid,9,Yes,12620.41,Rejected,8.5767,0.9373,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0001316,POL-101316,Health,20160.78,2354.74,40,72,Hospitalization,Low,1,Complete,Yes,Pending,0,Yes,19359.79,Approved,8.5618,1.0414,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001319,POL-101319,Motor,6546.77,1131.83,3,55,Vandalism,Medium,1,Missing,Yes,Pending,2,Yes,5743.94,Approved,5.7842,1.1398,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001330,POL-101330,Property,20442.89,2276.09,29,49,Water Damage,Low,2,Complete,No,Paid,35,Yes,21705.91,Approved,8.9816,0.9418,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0001332,POL-101332,Motor,17874.37,2220.91,23,42,Vandalism,Medium,1,Partial,Yes,Paid,25,Yes,13635.49,Approved,8.0482,1.3109,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0001335,POL-101335,Health,7347.03,2075.85,16,35,Surgical Procedure,Medium,1,Partial,No,Paid,12,Yes,6545.72,Rejected,3.5393,1.1224,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0001337,POL-101337,Property,35219.26,3697.89,18,36,Theft/Burglary,Medium,2,Complete,Yes,Paid,16,No,35219.26,Approved,9.5242,1.0,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0001344,POL-101344,Health,7401.57,1974.37,47,52,Hospitalization,Medium,0,Missing,Yes,Paid,2,Yes,7019.99,Rejected,3.7488,1.0544,Established (12-48m),Immediate (<= 3d),None (0),0.0
+CLM-0001357,POL-101357,Motor,16291.91,551.01,21,29,Theft/Burglary,Medium,0,Partial,Yes,Paid,1,Yes,16643.29,Approved,29.5674,0.9789,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0001358,POL-101358,Life,48722.79,1474.27,223,18,Critical Illness,High,0,Complete,Yes,Paid,8,Yes,44119.31,Approved,33.0488,1.1043,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0001359,POL-101359,Property,42243.88,2508.12,60,23,Water Damage,High,0,Complete,Yes,Paid,3,Yes,47509.75,Approved,16.8428,0.8892,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0001361,POL-101361,Motor,8763.18,1871.21,93,39,Vandalism,Medium,1,Complete,Yes,Paid,10,Yes,8674.55,Approved,4.6832,1.0102,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0001371,POL-101371,Health,4679.03,1124.83,48,39,Hospitalization,High,2,Complete,Yes,Pending,2,Yes,4107.87,Approved,4.1598,1.139,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001373,POL-101373,Motor,6516.58,2231.02,4,18,Vandalism,Medium,1,Complete,Yes,Overdue,4,Yes,6571.32,Approved,2.9209,0.9917,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0001376,POL-101376,Motor,15542.08,2163.44,8,37,Theft/Burglary,Medium,4,Partial,Yes,Paid,9,Yes,16261.6,Approved,7.184,0.9558,New (< 12m),Normal (4-14d),Frequent (3+),1.0
+CLM-0001396,POL-101396,Property,21299.44,760.95,47,66,Natural Hazard,Medium,1,Partial,Yes,Paid,9,Yes,20452.79,Rejected,27.9906,1.0414,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0001397,POL-101397,Health,12740.82,2959.72,26,22,Outpatient Treatment,Low,1,Complete,Yes,Paid,6,Yes,14669.52,Approved,4.3047,0.8685,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0001415,POL-101415,Property,13566.11,3661.3,11,60,Theft/Burglary,Medium,0,Complete,Yes,Overdue,0,Yes,15414.71,Rejected,3.7053,0.8801,New (< 12m),Immediate (<= 3d),None (0),0.0
+CLM-0001418,POL-101418,Life,91675.85,840.72,84,40,Disability,Medium,1,Complete,Yes,Overdue,0,Yes,78660.9,Approved,109.0444,1.1655,Mature (> 48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001420,POL-101420,Health,18413.3,3351.6,6,33,Surgical Procedure,Medium,0,Missing,Yes,Pending,1,Yes,21620.53,Approved,5.4939,0.8517,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0001440,POL-101440,Health,13183.61,1588.98,12,74,Outpatient Treatment,Low,2,Partial,Yes,Paid,39,Yes,15086.02,Approved,8.2969,0.8739,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0001448,POL-101448,Health,14960.66,3111.81,37,38,Surgical Procedure,Medium,0,Missing,No,Paid,23,Yes,16686.54,Rejected,4.8077,0.8966,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0001452,POL-101452,Property,8281.85,3455.84,4,27,Fire Damage,Low,0,Complete,Yes,Pending,2,Yes,8733.63,Approved,2.3965,0.9483,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0001459,POL-101459,Health,17838.98,3328.91,29,50,Medical Emergency,Low,0,Complete,Yes,Pending,2,Yes,13371.55,Rejected,5.3588,1.3341,Established (12-48m),Immediate (<= 3d),None (0),0.0
+CLM-0001465,POL-101465,Health,33694.05,2433.43,61,40,Hospitalization,High,1,Complete,Yes,Paid,1,Yes,34454.82,Approved,13.8463,0.9779,Mature (> 48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001477,POL-101477,Life,46052.76,4139.79,3,49,Terminal Illness,Medium,0,Complete,Yes,Paid,1,No,53661.82,Approved,11.1244,0.8582,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0001483,POL-101483,Motor,3193.4,1976.97,32,29,Windshield Damage,Low,0,Complete,Yes,Paid,38,Yes,2722.37,Approved,1.6153,1.173,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0001490,POL-101490,Health,12022.02,2018.09,49,40,Hospitalization,Low,1,Complete,Yes,Paid,12,Yes,11265.27,Approved,5.9571,1.0672,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0001491,POL-101491,Motor,7344.15,1304.14,120,34,Windshield Damage,Low,1,Partial,Yes,Pending,8,Yes,7257.35,Approved,5.6314,1.012,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0001495,POL-101495,Life,22681.31,1482.82,6,57,Accidental Death,Low,3,Complete,Yes,Paid,4,Yes,23504.97,Rejected,15.2961,0.965,New (< 12m),Normal (4-14d),Frequent (3+),0.0
+CLM-0001512,POL-101512,Motor,10370.82,1938.03,7,46,Windshield Damage,Medium,1,Complete,Yes,Paid,6,Yes,11917.82,Approved,5.3512,0.8702,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0001520,POL-101520,Life,21518.24,1912.0,62,52,Accidental Death,Low,0,Complete,Yes,Paid,1,Yes,16845.27,Approved,11.2543,1.2774,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0001530,POL-101530,Life,39617.43,1760.21,5,49,Disability,Medium,0,Complete,Yes,Pending,7,Yes,30622.42,Approved,22.5072,1.2937,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0001535,POL-101535,Life,38587.33,1365.97,48,33,Disability,Medium,0,Complete,Yes,Paid,1,Yes,34295.8,Approved,28.249,1.1251,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0001551,POL-101551,Health,33575.71,3066.05,52,35,Hospitalization,Medium,0,Partial,No,Paid,0,Yes,28016.9,Rejected,10.9508,1.1984,Mature (> 48m),Immediate (<= 3d),None (0),0.0
+CLM-0001557,POL-101557,Health,20011.3,2591.41,43,18,Surgical Procedure,Medium,0,Complete,Yes,Pending,5,Yes,18877.67,Approved,7.7222,1.0601,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0001560,POL-101560,Motor,28648.54,1242.12,43,48,Theft/Burglary,High,0,Partial,Yes,Pending,4,Yes,24417.97,Approved,23.0642,1.1733,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0001564,POL-101564,Health,2288.94,678.74,13,22,Outpatient Treatment,Medium,0,Partial,Yes,Paid,27,Yes,2488.65,Approved,3.3723,0.9198,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0001571,POL-101571,Life,60762.56,882.58,52,36,Disability,High,0,Complete,Yes,Paid,4,Yes,49228.54,Approved,68.8465,1.2343,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0001582,POL-101582,Motor,5491.88,2129.47,43,50,Vehicle Collision,Medium,2,Partial,Yes,Pending,10,Yes,5715.69,Rejected,2.579,0.9608,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0001583,POL-101583,Health,24176.2,1522.63,106,18,Hospitalization,Low,0,Complete,Yes,Paid,14,No,19757.7,Rejected,15.8779,1.2236,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0001591,POL-101591,Health,10514.75,3168.85,47,19,Medical Emergency,Low,0,Complete,Yes,Paid,3,Yes,10640.14,Approved,3.3182,0.9882,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0001599,POL-101599,Health,10269.56,1064.04,33,36,Hospitalization,Low,0,Partial,Yes,Paid,3,Yes,8614.12,Approved,9.6515,1.1922,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0001611,POL-101611,Life,57066.68,2881.26,5,72,Accidental Death,Low,3,Complete,Yes,Paid,2,Yes,43058.99,Approved,19.8062,1.3253,New (< 12m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0001624,POL-101624,Life,73572.74,1897.67,46,50,Terminal Illness,High,0,Complete,Yes,Paid,5,Yes,69912.42,Rejected,38.77,1.0524,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0001635,POL-101635,Health,13286.87,2564.66,51,63,Medical Emergency,Medium,2,Complete,Yes,Overdue,0,Yes,15556.57,Approved,5.1808,0.8541,Mature (> 48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001641,POL-101641,Property,31330.09,2829.15,42,52,Fire Damage,Medium,0,Complete,Yes,Paid,7,Yes,27895.93,Approved,11.074,1.1231,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0001682,POL-101682,Health,47517.27,1875.18,7,40,Surgical Procedure,High,2,Complete,Yes,Paid,30,Yes,49303.24,Approved,25.3401,0.9638,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0001695,POL-101695,Health,25513.08,1751.75,14,53,Medical Emergency,Medium,2,Partial,Yes,Paid,7,Yes,23067.93,Rejected,14.5643,1.106,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0001705,POL-101705,Motor,2888.75,1999.71,68,49,Vehicle Collision,High,1,Missing,Yes,Paid,23,Yes,2657.26,Approved,1.4446,1.0871,Mature (> 48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0001710,POL-101710,Health,16857.59,3463.5,1,27,Hospitalization,Low,0,Missing,Yes,Pending,38,No,18209.95,Rejected,4.8672,0.9257,New (< 12m),Delayed (> 14d),None (0),0.0
+CLM-0001732,POL-101732,Property,3967.93,3676.96,16,67,Water Damage,Medium,0,Complete,Yes,Pending,18,Yes,4469.42,Approved,1.0791,0.8878,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0001734,POL-101734,Health,34123.14,937.55,8,54,Outpatient Treatment,Medium,0,Missing,Yes,Overdue,12,No,26739.88,Rejected,36.3961,1.2761,New (< 12m),Normal (4-14d),None (0),0.0
+CLM-0001738,POL-101738,Health,14092.6,2563.9,1,49,Surgical Procedure,Medium,6,Partial,Yes,Paid,4,Yes,15747.88,Rejected,5.4965,0.8949,New (< 12m),Normal (4-14d),Frequent (3+),0.0
+CLM-0001739,POL-101739,Motor,8718.65,981.93,4,43,Vandalism,Medium,4,Complete,Yes,Paid,17,No,9052.32,Approved,8.8791,0.9631,New (< 12m),Delayed (> 14d),Frequent (3+),1.0
+CLM-0001751,POL-101751,Motor,15724.51,2437.31,6,39,Theft/Burglary,Medium,1,Partial,Yes,Pending,3,Yes,16275.25,Approved,6.4516,0.9662,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001761,POL-101761,Health,14977.34,695.47,8,44,Hospitalization,Low,1,Complete,Yes,Overdue,5,Yes,15191.7,Approved,21.5356,0.9859,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0001762,POL-101762,Property,26202.65,3260.95,38,22,Natural Hazard,Medium,2,Complete,Yes,Paid,0,Yes,26372.35,Rejected,8.0353,0.9936,Established (12-48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0001766,POL-101766,Property,12714.11,1024.61,43,42,Theft/Burglary,Low,0,Complete,No,Paid,0,Yes,12423.62,Rejected,12.4087,1.0234,Established (12-48m),Immediate (<= 3d),None (0),0.0
+CLM-0001768,POL-101768,Health,11835.99,1707.71,9,39,Medical Emergency,Low,1,Complete,Yes,Paid,3,Yes,9719.82,Approved,6.9309,1.2177,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001773,POL-101773,Health,18911.23,1444.64,58,52,Outpatient Treatment,Low,0,Complete,Yes,Pending,22,Yes,20455.07,Approved,13.0906,0.9245,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0001778,POL-101778,Health,7706.17,897.77,45,47,Surgical Procedure,Low,1,Complete,Yes,Paid,26,Yes,6308.75,Approved,8.5837,1.2215,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0001787,POL-101787,Life,82558.34,3752.85,48,29,Accidental Death,Medium,2,Complete,Yes,Paid,4,Yes,72941.43,Approved,21.9988,1.1318,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0001804,POL-101804,Motor,13244.46,2162.03,1,31,Windshield Damage,Low,0,Complete,Yes,Paid,13,Yes,14501.91,Approved,6.1259,0.9133,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0001824,POL-101824,Health,53770.47,635.19,88,50,Hospitalization,High,1,Complete,Yes,Paid,11,Yes,44097.45,Approved,84.6526,1.2194,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0001825,POL-101825,Motor,1771.57,1741.94,217,61,Vehicle Collision,Low,0,Partial,Yes,Overdue,0,Yes,1456.32,Rejected,1.017,1.2165,Mature (> 48m),Immediate (<= 3d),None (0),0.0
+CLM-0001843,POL-101843,Life,53254.09,4853.29,12,50,Terminal Illness,Low,0,Complete,Yes,Paid,7,No,47294.74,Rejected,10.9728,1.126,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0001849,POL-101849,Life,52316.24,1369.03,33,27,Terminal Illness,High,0,Complete,No,Paid,1,Yes,44934.24,Rejected,38.2141,1.1643,Established (12-48m),Immediate (<= 3d),None (0),0.0
+CLM-0001867,POL-101867,Property,48100.58,1120.09,11,37,Theft/Burglary,Medium,2,Complete,Yes,Pending,11,Yes,40872.27,Rejected,42.9435,1.1769,New (< 12m),Normal (4-14d),Few (1-2),0.0
+CLM-0001873,POL-101873,Motor,10806.74,1050.97,11,40,Theft/Burglary,High,3,Complete,Yes,Paid,36,Yes,12065.28,Rejected,10.2826,0.8957,New (< 12m),Delayed (> 14d),Frequent (3+),0.0
+CLM-0001894,POL-101894,Life,110143.04,2338.2,2,47,Terminal Illness,High,0,Partial,Yes,Paid,28,Yes,88337.4,Approved,47.1059,1.2468,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0001897,POL-101897,Property,41116.81,1679.04,30,49,Fire Damage,Medium,1,Complete,Yes,Paid,1,Yes,37490.14,Approved,24.4883,1.0967,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0001898,POL-101898,Health,7163.33,3554.44,6,55,Surgical Procedure,Medium,0,Partial,Yes,Paid,3,Yes,5419.09,Rejected,2.0153,1.3219,New (< 12m),Immediate (<= 3d),None (0),0.0
+CLM-0001899,POL-101899,Health,31462.15,2264.97,12,44,Outpatient Treatment,Medium,1,Partial,Yes,Paid,11,Yes,33425.62,Approved,13.8908,0.9413,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0001915,POL-101915,Health,7557.05,2311.98,17,48,Hospitalization,Low,0,Partial,Yes,Paid,4,Yes,6065.7,Approved,3.2686,1.2459,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0001926,POL-101926,Life,34104.39,3790.66,1,21,Disability,Low,1,Missing,Yes,Paid,1,Yes,29398.57,Rejected,8.997,1.1601,New (< 12m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0001935,POL-101935,Motor,2332.66,2301.51,89,39,Windshield Damage,Medium,0,Partial,Yes,Paid,0,Yes,1758.16,Approved,1.0135,1.3268,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0001938,POL-101938,Health,22511.73,2699.52,7,37,Hospitalization,Low,0,Complete,Yes,Paid,7,Yes,17922.89,Approved,8.3392,1.256,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0001971,POL-101971,Property,38910.75,1347.99,80,73,Fire Damage,Medium,2,Partial,Yes,Paid,6,Yes,42242.81,Rejected,28.8658,0.9211,Mature (> 48m),Normal (4-14d),Few (1-2),0.0
+CLM-0001976,POL-101976,Motor,16994.21,2231.95,5,71,Windshield Damage,Medium,0,Partial,Yes,Paid,11,Yes,16240.18,Approved,7.6141,1.0464,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0001987,POL-101987,Motor,1928.45,1024.49,30,53,Vandalism,Low,1,Complete,Yes,Paid,6,Yes,2175.33,Approved,1.8824,0.8865,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0002001,POL-102001,Life,10681.63,932.12,23,60,Disability,Medium,1,Missing,Yes,Paid,2,Yes,10562.9,Approved,11.4595,1.0112,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0002008,POL-102008,Property,59106.28,3019.82,44,34,Water Damage,High,2,Complete,Yes,Paid,0,Yes,46956.19,Approved,19.5728,1.2588,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0002011,POL-102011,Life,42712.89,2118.39,2,32,Critical Illness,Medium,0,Partial,Yes,Paid,6,Yes,32797.23,Rejected,20.1629,1.3023,New (< 12m),Normal (4-14d),None (0),0.0
+CLM-0002014,POL-102014,Health,5627.49,3497.27,13,61,Outpatient Treatment,Low,0,Complete,Yes,Overdue,24,Yes,4892.24,Rejected,1.6091,1.1503,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0002016,POL-102016,Health,18056.94,3493.22,35,33,Surgical Procedure,Medium,0,Complete,Yes,Paid,7,Yes,17359.79,Approved,5.1691,1.0402,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0002019,POL-102019,Motor,10557.83,1878.62,27,31,Vehicle Collision,Medium,3,Partial,Yes,Overdue,2,Yes,9868.54,Rejected,5.62,1.0698,Established (12-48m),Immediate (<= 3d),Frequent (3+),0.0
+CLM-0002029,POL-102029,Motor,9901.88,1379.35,4,56,Vehicle Collision,Low,1,Complete,Yes,Paid,0,Yes,7736.64,Approved,7.1787,1.2799,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0002040,POL-102040,Life,40382.51,1635.69,37,64,Critical Illness,Medium,0,Missing,Yes,Paid,20,Yes,32542.63,Rejected,24.6884,1.2409,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0002047,POL-102047,Motor,4604.02,2263.41,68,51,Vehicle Collision,Medium,0,Complete,Yes,Paid,22,Yes,5234.52,Approved,2.0341,0.8795,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0002051,POL-102051,Health,13616.57,2896.74,48,54,Medical Emergency,High,0,Partial,Yes,Pending,19,Yes,12064.98,Approved,4.7007,1.1286,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0002059,POL-102059,Health,27103.99,2128.68,1,32,Hospitalization,Medium,0,Complete,Yes,Paid,6,Yes,28816.63,Approved,12.7328,0.9406,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0002062,POL-102062,Motor,1906.56,806.94,45,54,Theft/Burglary,Low,2,Partial,Yes,Paid,4,Yes,1665.81,Approved,2.3627,1.1445,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0002076,POL-102076,Health,1956.91,3527.91,43,37,Medical Emergency,Low,0,Complete,Yes,Paid,9,No,1850.21,Rejected,0.5547,1.0577,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0002081,POL-102081,Health,19284.98,2013.97,4,59,Medical Emergency,Low,1,Partial,Yes,Paid,2,Yes,19284.98,Approved,9.5756,1.0,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0002087,POL-102087,Motor,960.47,1538.53,6,65,Vehicle Collision,Medium,2,Complete,Yes,Paid,21,Yes,955.56,Approved,0.6243,1.0051,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002088,POL-102088,Health,12683.15,2412.82,39,43,Medical Emergency,Low,0,Complete,Yes,Paid,9,No,10933.56,Approved,5.2566,1.16,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0002103,POL-102103,Health,13680.16,3723.75,10,43,Outpatient Treatment,Low,1,Partial,Yes,Paid,13,Yes,15632.16,Approved,3.6738,0.8751,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0002132,POL-102132,Motor,19525.93,507.01,24,30,Vandalism,Low,0,Complete,Yes,Paid,6,Yes,16025.21,Approved,38.5119,1.2185,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0002154,POL-102154,Life,24601.98,4099.18,4,35,Accidental Death,Low,0,Complete,Yes,Paid,4,No,24148.73,Approved,6.0017,1.0188,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0002165,POL-102165,Life,99006.49,2959.58,17,60,Disability,High,0,Complete,Yes,Paid,19,Yes,108233.63,Approved,33.4529,0.9147,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0002174,POL-102174,Motor,4129.69,929.22,128,65,Theft/Burglary,High,1,Partial,No,Paid,4,No,3327.56,Rejected,4.4443,1.2411,Mature (> 48m),Normal (4-14d),Few (1-2),0.0
+CLM-0002177,POL-102177,Life,13617.73,4399.88,16,25,Disability,Low,3,Complete,Yes,Paid,0,Yes,15480.18,Approved,3.095,0.8797,Established (12-48m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0002178,POL-102178,Health,3276.09,3323.36,25,49,Outpatient Treatment,Medium,1,Complete,Yes,Paid,52,Yes,3214.29,Approved,0.9858,1.0192,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002184,POL-102184,Health,20358.22,3229.73,113,57,Medical Emergency,Low,0,Missing,Yes,Overdue,10,Yes,17117.86,Rejected,6.3034,1.1893,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0002196,POL-102196,Motor,11472.38,1717.07,19,42,Vandalism,Medium,4,Complete,Yes,Paid,0,Yes,13214.09,Approved,6.6814,0.8682,Established (12-48m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0002212,POL-102212,Health,3482.15,3581.65,13,18,Hospitalization,High,0,Partial,Yes,Paid,14,Yes,2825.99,Approved,0.9722,1.2322,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0002214,POL-102214,Motor,4025.65,1088.82,34,42,Vehicle Collision,Low,0,Complete,Yes,Paid,20,No,4521.71,Rejected,3.6973,0.8903,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0002216,POL-102216,Motor,26506.14,765.93,7,66,Theft/Burglary,Medium,0,Complete,Yes,Overdue,9,Yes,20524.0,Rejected,34.6065,1.2915,New (< 12m),Normal (4-14d),None (0),0.0
+CLM-0002220,POL-102220,Motor,6403.51,2471.88,46,59,Vandalism,Low,3,Complete,Yes,Paid,6,Yes,7080.02,Approved,2.5905,0.9044,Established (12-48m),Normal (4-14d),Frequent (3+),1.0
+CLM-0002224,POL-102224,Motor,13543.14,1367.95,45,39,Theft/Burglary,Medium,2,Partial,Yes,Paid,22,Yes,13067.4,Approved,9.9003,1.0364,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002231,POL-102231,Health,6183.51,2375.06,60,31,Surgical Procedure,Low,0,Complete,Yes,Paid,35,Yes,5424.63,Approved,2.6035,1.1399,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0002233,POL-102233,Life,41801.3,858.83,91,54,Disability,Low,1,Complete,Yes,Paid,16,Yes,31506.62,Approved,48.6724,1.3267,Mature (> 48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002238,POL-102238,Health,30513.33,3610.32,81,47,Surgical Procedure,High,0,Complete,Yes,Paid,4,Yes,27706.88,Approved,8.4517,1.1013,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0002239,POL-102239,Motor,13592.95,1737.05,4,56,Theft/Burglary,Medium,3,Missing,Yes,Paid,23,Yes,11017.86,Rejected,7.8253,1.2337,New (< 12m),Delayed (> 14d),Frequent (3+),0.0
+CLM-0002247,POL-102247,Motor,11182.65,2212.61,16,52,Theft/Burglary,Low,3,Complete,Yes,Paid,12,No,10323.41,Approved,5.0541,1.0832,Established (12-48m),Normal (4-14d),Frequent (3+),1.0
+CLM-0002255,POL-102255,Motor,6920.0,1252.88,5,43,Windshield Damage,Medium,2,Complete,Yes,Paid,37,Yes,7866.19,Approved,5.5233,0.8797,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002259,POL-102259,Health,16466.04,2659.72,39,65,Outpatient Treatment,High,0,Complete,Yes,Paid,10,Yes,17040.77,Approved,6.1909,0.9663,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0002267,POL-102267,Property,33183.75,4048.4,93,51,Fire Damage,Medium,4,Complete,No,Paid,1,Yes,35602.18,Approved,8.1968,0.9321,Mature (> 48m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0002278,POL-102278,Health,20752.62,894.24,4,23,Hospitalization,Medium,1,Complete,No,Overdue,22,No,23189.45,Rejected,23.207,0.8949,New (< 12m),Delayed (> 14d),Few (1-2),0.0
+CLM-0002280,POL-102280,Life,57626.58,4612.96,10,46,Accidental Death,Medium,0,Partial,Yes,Paid,32,No,51337.76,Approved,12.4923,1.1225,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0002285,POL-102285,Property,39592.11,1143.55,45,35,Fire Damage,Medium,0,Complete,Yes,Paid,0,Yes,34251.33,Approved,34.6221,1.1559,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0002295,POL-102295,Property,26492.62,2254.4,29,27,Theft/Burglary,Medium,0,Complete,Yes,Paid,5,Yes,27941.02,Approved,11.7515,0.9482,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0002302,POL-102302,Motor,14074.98,1658.61,65,53,Theft/Burglary,Medium,4,Complete,Yes,Paid,3,No,12182.95,Approved,8.486,1.1553,Mature (> 48m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0002306,POL-102306,Motor,17705.91,798.09,97,40,Theft/Burglary,Medium,0,Complete,Yes,Paid,17,No,17392.35,Approved,22.1854,1.018,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0002335,POL-102335,Life,16829.4,4456.52,31,31,Critical Illness,Low,1,Partial,Yes,Paid,30,No,13245.37,Rejected,3.7764,1.2706,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0002336,POL-102336,Motor,2171.37,1548.55,17,43,Theft/Burglary,Low,0,Missing,Yes,Overdue,2,Yes,2400.2,Rejected,1.4022,0.9047,Established (12-48m),Immediate (<= 3d),None (0),0.0
+CLM-0002341,POL-102341,Life,39052.46,4177.72,30,82,Critical Illness,Medium,3,Complete,Yes,Paid,5,Yes,43422.01,Approved,9.3478,0.8994,Established (12-48m),Normal (4-14d),Frequent (3+),1.0
+CLM-0002346,POL-102346,Motor,9195.77,2192.14,9,46,Vehicle Collision,Low,1,Complete,Yes,Paid,4,Yes,10437.1,Approved,4.1949,0.8811,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0002349,POL-102349,Property,36991.86,1975.49,26,57,Theft/Burglary,Low,1,Complete,Yes,Paid,1,Yes,30983.73,Rejected,18.7254,1.1939,Established (12-48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0002351,POL-102351,Health,5879.95,3772.86,10,82,Medical Emergency,Low,1,Complete,Yes,Paid,17,No,6487.67,Rejected,1.5585,0.9063,New (< 12m),Delayed (> 14d),Few (1-2),0.0
+CLM-0002366,POL-102366,Life,68827.47,3203.37,3,43,Critical Illness,Medium,1,Complete,Yes,Paid,25,Yes,57477.25,Approved,21.486,1.1975,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002379,POL-102379,Motor,9803.35,676.39,3,18,Vehicle Collision,Medium,0,Complete,No,Pending,19,Yes,11063.05,Rejected,14.4936,0.8861,New (< 12m),Delayed (> 14d),None (0),0.0
+CLM-0002399,POL-102399,Life,37997.99,4426.47,31,55,Accidental Death,Low,1,Complete,Yes,Pending,7,No,39089.74,Approved,8.5843,0.9721,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0002404,POL-102404,Motor,1531.47,1652.73,28,35,Vehicle Collision,Low,3,Complete,Yes,Paid,0,Yes,1796.45,Approved,0.9266,0.8525,Established (12-48m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0002409,POL-102409,Property,15181.36,3623.28,15,58,Natural Hazard,Low,3,Complete,Yes,Paid,5,Yes,13022.94,Approved,4.1899,1.1657,Established (12-48m),Normal (4-14d),Frequent (3+),1.0
+CLM-0002411,POL-102411,Life,29271.84,2533.7,6,36,Critical Illness,Low,0,Partial,Yes,Paid,2,Yes,27084.08,Approved,11.553,1.0808,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0002430,POL-102430,Motor,13349.99,2295.58,5,62,Vehicle Collision,Low,0,Complete,Yes,Paid,44,Yes,10160.67,Rejected,5.8155,1.3139,New (< 12m),Delayed (> 14d),None (0),0.0
+CLM-0002434,POL-102434,Health,39200.08,1372.5,21,26,Medical Emergency,High,1,Complete,No,Pending,0,Yes,33657.98,Rejected,28.5611,1.1647,Established (12-48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0002435,POL-102435,Health,7981.16,2545.42,5,39,Hospitalization,Low,1,Complete,Yes,Paid,33,Yes,6097.28,Approved,3.1355,1.309,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002439,POL-102439,Motor,7108.8,1502.83,15,51,Vandalism,Low,1,Complete,Yes,Paid,14,Yes,6677.17,Approved,4.7303,1.0646,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0002440,POL-102440,Motor,3092.55,1514.15,8,40,Vandalism,Low,0,Complete,Yes,Paid,24,Yes,2433.47,Approved,2.0424,1.2708,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0002446,POL-102446,Motor,5375.88,1250.68,47,59,Vehicle Collision,High,1,Complete,Yes,Overdue,29,Yes,5773.88,Approved,4.2984,0.9311,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002448,POL-102448,Life,21040.81,4792.82,43,63,Critical Illness,Medium,0,Partial,Yes,Pending,14,Yes,22082.39,Approved,4.3901,0.9528,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0002457,POL-102457,Health,35025.45,709.6,11,36,Hospitalization,High,1,Missing,Yes,Paid,24,Yes,32558.09,Rejected,49.3594,1.0758,New (< 12m),Delayed (> 14d),Few (1-2),0.0
+CLM-0002471,POL-102471,Property,23308.47,3452.58,38,34,Natural Hazard,Low,5,Missing,Yes,Paid,33,No,26136.97,Rejected,6.751,0.8918,Established (12-48m),Delayed (> 14d),Frequent (3+),0.0
+CLM-0002472,POL-102472,Property,18078.91,1186.01,16,42,Fire Damage,Medium,0,Partial,Yes,Paid,8,Yes,20489.48,Approved,15.2435,0.8824,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0002477,POL-102477,Life,88709.87,2598.19,127,37,Critical Illness,Medium,0,Complete,Yes,Paid,5,Yes,83914.32,Approved,34.1429,1.0571,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0002485,POL-102485,Property,20353.17,1815.49,33,35,Water Damage,Medium,1,Complete,Yes,Paid,24,Yes,17270.07,Approved,11.2108,1.1785,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002496,POL-102496,Health,2969.77,2513.31,14,69,Surgical Procedure,Low,0,Complete,Yes,Paid,0,No,3370.1,Approved,1.1816,0.8812,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0002504,POL-102504,Property,32514.81,3170.34,4,30,Natural Hazard,High,0,Partial,Yes,Paid,17,No,31689.95,Rejected,10.2559,1.026,New (< 12m),Delayed (> 14d),None (0),0.0
+CLM-0002508,POL-102508,Health,34951.82,671.76,20,22,Surgical Procedure,Medium,0,Partial,Yes,Paid,9,No,27681.89,Rejected,52.0302,1.2626,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0002519,POL-102519,Life,65872.41,1237.15,27,40,Critical Illness,Medium,1,Complete,Yes,Pending,15,Yes,69199.83,Approved,53.2453,0.9519,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002524,POL-102524,Life,27829.98,2934.4,20,46,Critical Illness,Low,2,Partial,No,Pending,2,Yes,29139.19,Rejected,9.484,0.9551,Established (12-48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0002532,POL-102532,Motor,24580.46,1158.1,182,28,Vandalism,Medium,0,Complete,Yes,Paid,21,Yes,19245.39,Approved,21.2248,1.2772,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0002535,POL-102535,Motor,8577.33,1204.15,86,22,Theft/Burglary,Low,0,Complete,Yes,Paid,17,No,6597.44,Rejected,7.1231,1.3001,Mature (> 48m),Delayed (> 14d),None (0),0.0
+CLM-0002540,POL-102540,Motor,9267.74,1029.71,41,42,Theft/Burglary,Low,2,Complete,Yes,Pending,17,Yes,8718.47,Approved,9.0003,1.063,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002550,POL-102550,Motor,33089.63,1479.22,2,35,Vandalism,High,0,Partial,Yes,Pending,8,Yes,34844.22,Approved,22.3696,0.9496,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0002561,POL-102561,Health,6559.56,2476.46,44,45,Outpatient Treatment,Low,0,Complete,Yes,Overdue,15,Yes,5383.07,Rejected,2.6488,1.2186,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0002568,POL-102568,Health,10271.22,3630.82,5,47,Outpatient Treatment,Low,1,Complete,Yes,Paid,17,No,8172.42,Rejected,2.8289,1.2568,New (< 12m),Delayed (> 14d),Few (1-2),0.0
+CLM-0002573,POL-102573,Motor,21695.99,2437.53,65,30,Theft/Burglary,High,0,Complete,No,Paid,19,Yes,25112.99,Rejected,8.9008,0.8639,Mature (> 48m),Delayed (> 14d),None (0),0.0
+CLM-0002577,POL-102577,Motor,2120.0,2433.3,59,80,Vehicle Collision,High,0,Complete,Yes,Paid,27,Yes,1846.79,Approved,0.8712,1.1479,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0002579,POL-102579,Motor,14489.6,883.05,145,28,Vehicle Collision,Low,0,Partial,Yes,Paid,6,Yes,15770.36,Approved,16.4086,0.9188,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0002582,POL-102582,Health,46209.41,1662.03,31,28,Hospitalization,High,3,Complete,Yes,Pending,2,Yes,38422.75,Approved,27.803,1.2027,Established (12-48m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0002587,POL-102587,Motor,15212.66,1048.4,18,44,Theft/Burglary,Medium,1,Complete,Yes,Paid,25,Yes,16481.86,Approved,14.5104,0.923,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002605,POL-102605,Life,93914.15,1898.24,46,44,Accidental Death,Medium,1,Complete,Yes,Pending,17,No,77559.86,Rejected,49.4743,1.2109,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0002607,POL-102607,Life,59109.34,1019.97,8,41,Disability,Medium,0,Partial,Yes,Paid,8,Yes,54144.46,Approved,57.952,1.0917,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0002611,POL-102611,Health,21295.74,3318.69,97,35,Outpatient Treatment,Medium,4,Complete,Yes,Paid,5,Yes,18289.49,Approved,6.4169,1.1644,Mature (> 48m),Normal (4-14d),Frequent (3+),1.0
+CLM-0002626,POL-102626,Life,51473.86,2935.76,29,58,Critical Illness,Medium,0,Complete,Yes,Paid,1,Yes,48432.71,Approved,17.5334,1.0628,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0002657,POL-102657,Health,40098.47,2444.67,43,49,Surgical Procedure,High,0,Missing,Yes,Paid,31,No,31407.48,Rejected,16.4024,1.2767,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0002670,POL-102670,Property,19605.39,4173.6,175,31,Natural Hazard,Low,3,Partial,Yes,Overdue,31,Yes,21627.02,Rejected,4.6975,0.9065,Mature (> 48m),Delayed (> 14d),Frequent (3+),0.0
+CLM-0002671,POL-102671,Property,37726.13,1222.62,4,22,Natural Hazard,Low,1,Complete,Yes,Pending,54,Yes,36630.83,Approved,30.8568,1.0299,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002679,POL-102679,Motor,16454.61,1005.22,17,43,Windshield Damage,Medium,0,Complete,Yes,Paid,0,Yes,18475.57,Approved,16.3692,0.8906,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0002700,POL-102700,Motor,13998.75,613.73,27,51,Vandalism,Medium,5,Complete,Yes,Paid,29,No,16244.17,Rejected,22.8093,0.8618,Established (12-48m),Delayed (> 14d),Frequent (3+),0.0
+CLM-0002703,POL-102703,Life,31936.93,2935.03,62,45,Accidental Death,Low,1,Missing,Yes,Overdue,14,Yes,25958.13,Rejected,10.8813,1.2303,Mature (> 48m),Normal (4-14d),Few (1-2),0.0
+CLM-0002717,POL-102717,Property,7547.01,2323.96,3,40,Natural Hazard,Medium,0,Complete,Yes,Paid,6,Yes,8831.81,Approved,3.2475,0.8545,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0002737,POL-102737,Health,9760.5,1274.18,58,34,Outpatient Treatment,Low,3,Complete,Yes,Paid,7,No,8814.71,Rejected,7.6602,1.1073,Mature (> 48m),Normal (4-14d),Frequent (3+),0.0
+CLM-0002742,POL-102742,Life,43766.3,2426.99,44,37,Terminal Illness,Medium,1,Missing,No,Paid,5,Yes,42945.08,Rejected,18.0332,1.0191,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0002749,POL-102749,Health,21876.69,706.34,20,46,Surgical Procedure,Medium,1,Complete,Yes,Pending,32,Yes,25051.12,Rejected,30.9719,0.8733,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0002750,POL-102750,Health,16681.0,1792.34,5,47,Medical Emergency,Medium,0,Missing,Yes,Paid,7,Yes,14206.59,Rejected,9.3068,1.1742,New (< 12m),Normal (4-14d),None (0),0.0
+CLM-0002757,POL-102757,Motor,7615.01,908.66,29,41,Vehicle Collision,Low,1,Complete,Yes,Paid,8,Yes,6195.91,Approved,8.3805,1.229,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0002761,POL-102761,Health,5620.95,1482.12,49,57,Hospitalization,Medium,0,Missing,Yes,Paid,16,Yes,5812.03,Rejected,3.7925,0.9671,Mature (> 48m),Delayed (> 14d),None (0),0.0
+CLM-0002764,POL-102764,Health,24610.67,1798.95,24,26,Hospitalization,Low,0,Complete,Yes,Pending,12,No,19411.01,Approved,13.6806,1.2679,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0002765,POL-102765,Motor,21278.76,1872.24,71,55,Vehicle Collision,Medium,0,Partial,Yes,Paid,1,Yes,17829.15,Rejected,11.3654,1.1935,Mature (> 48m),Immediate (<= 3d),None (0),0.0
+CLM-0002766,POL-102766,Health,5170.22,998.39,25,39,Outpatient Treatment,Low,2,Complete,Yes,Paid,15,Yes,4398.48,Approved,5.1786,1.1755,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002772,POL-102772,Motor,3627.84,1920.6,64,21,Vandalism,Medium,0,Complete,Yes,Paid,2,No,3017.79,Approved,1.8889,1.2022,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0002781,POL-102781,Motor,2586.42,1316.5,30,67,Theft/Burglary,Low,2,Complete,No,Paid,13,Yes,2962.11,Rejected,1.9646,0.8732,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0002786,POL-102786,Life,45742.58,3711.21,1,52,Terminal Illness,Medium,0,Complete,Yes,Paid,11,Yes,47953.18,Approved,12.3255,0.9539,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0002798,POL-102798,Health,18325.17,2112.74,34,49,Medical Emergency,High,2,Complete,Yes,Overdue,1,Yes,20559.26,Approved,8.6737,0.8913,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0002806,POL-102806,Life,41182.59,3706.78,4,55,Terminal Illness,Medium,0,Partial,Yes,Paid,22,Yes,43979.22,Rejected,11.1101,0.9364,New (< 12m),Delayed (> 14d),None (0),0.0
+CLM-0002812,POL-102812,Health,17893.78,3000.51,44,30,Outpatient Treatment,Low,1,Complete,Yes,Paid,30,Yes,13641.98,Approved,5.9636,1.3117,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002831,POL-102831,Property,25010.39,2183.09,31,27,Water Damage,Low,0,Missing,No,Paid,14,Yes,27553.91,Rejected,11.4564,0.9077,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0002842,POL-102842,Health,14471.8,681.61,62,64,Hospitalization,Low,0,Partial,Yes,Overdue,6,Yes,11446.0,Rejected,21.2318,1.2644,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0002854,POL-102854,Health,7877.05,1171.0,11,30,Surgical Procedure,Medium,1,Partial,Yes,Paid,12,Yes,7185.08,Approved,6.7268,1.0963,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0002860,POL-102860,Motor,13475.41,2214.73,11,37,Vehicle Collision,Medium,1,Complete,Yes,Overdue,40,Yes,14011.9,Approved,6.0844,0.9617,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0002864,POL-102864,Motor,5730.59,706.42,60,74,Vandalism,High,0,Partial,Yes,Paid,7,Yes,5719.89,Approved,8.1122,1.0019,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0002877,POL-102877,Health,12261.09,933.45,25,58,Outpatient Treatment,Low,1,Complete,No,Overdue,3,Yes,9908.56,Rejected,13.1352,1.2374,Established (12-48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0002878,POL-102878,Health,3532.09,2382.7,27,54,Medical Emergency,Low,3,Missing,Yes,Paid,8,Yes,3773.37,Rejected,1.4824,0.9361,Established (12-48m),Normal (4-14d),Frequent (3+),0.0
+CLM-0002884,POL-102884,Motor,23086.92,2476.78,81,48,Windshield Damage,Medium,1,Complete,Yes,Pending,9,Yes,20634.76,Rejected,9.3213,1.1188,Mature (> 48m),Normal (4-14d),Few (1-2),0.0
+CLM-0002894,POL-102894,Property,30533.63,1904.15,32,45,Theft/Burglary,Medium,0,Complete,Yes,Pending,12,Yes,28687.05,Approved,16.0353,1.0644,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0002898,POL-102898,Motor,6491.33,1650.99,9,38,Vehicle Collision,High,0,Partial,Yes,Paid,0,Yes,5630.72,Approved,3.9318,1.1528,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0002902,POL-102902,Life,44241.25,3154.03,47,41,Disability,Medium,1,Partial,Yes,Paid,20,No,43701.2,Rejected,14.0269,1.0124,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0002904,POL-102904,Property,7317.1,1694.32,104,57,Theft/Burglary,Low,0,Partial,Yes,Paid,21,Yes,5753.57,Rejected,4.3186,1.2717,Mature (> 48m),Delayed (> 14d),None (0),0.0
+CLM-0002919,POL-102919,Health,13819.76,3665.52,1,33,Surgical Procedure,Low,0,Missing,No,Paid,2,No,12137.37,Rejected,3.7702,1.1386,New (< 12m),Immediate (<= 3d),None (0),0.0
+CLM-0002923,POL-102923,Motor,4858.86,746.12,1,26,Windshield Damage,Low,0,Missing,Yes,Paid,5,Yes,4272.4,Rejected,6.5122,1.1373,New (< 12m),Normal (4-14d),None (0),0.0
+CLM-0002948,POL-102948,Health,21572.65,2384.96,9,71,Medical Emergency,Medium,1,Complete,Yes,Paid,4,Yes,24940.17,Approved,9.0453,0.865,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0002952,POL-102952,Motor,8412.98,1115.98,46,40,Theft/Burglary,Medium,3,Partial,Yes,Paid,16,Yes,8171.02,Approved,7.5386,1.0296,Established (12-48m),Delayed (> 14d),Frequent (3+),1.0
+CLM-0002959,POL-102959,Property,22283.61,3261.71,56,47,Theft/Burglary,Medium,0,Complete,Yes,Paid,27,Yes,25467.67,Approved,6.8319,0.875,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0002973,POL-102973,Life,50644.87,3076.74,7,38,Accidental Death,Medium,0,Complete,Yes,Paid,49,Yes,40188.99,Approved,16.4606,1.2602,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0002986,POL-102986,Motor,8279.49,1944.92,45,50,Theft/Burglary,High,0,Partial,Yes,Paid,3,Yes,9608.13,Approved,4.257,0.8617,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0002990,POL-102990,Motor,11915.76,1062.56,31,44,Theft/Burglary,Medium,0,Complete,Yes,Paid,19,Yes,11111.74,Approved,11.2142,1.0724,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0002994,POL-102994,Life,57094.67,1619.81,49,46,Terminal Illness,Medium,1,Partial,Yes,Paid,5,Yes,58468.53,Approved,35.2478,0.9765,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0003012,POL-103012,Life,21980.69,810.68,7,31,Disability,High,0,Complete,No,Paid,6,Yes,20072.22,Approved,27.1139,1.0951,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0003018,POL-103018,Health,20056.82,2387.02,21,28,Surgical Procedure,Medium,0,Complete,Yes,Paid,36,No,19032.61,Approved,8.4025,1.0538,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0003026,POL-103026,Health,2676.57,3123.13,7,32,Hospitalization,Low,0,Complete,No,Paid,8,Yes,3066.84,Rejected,0.857,0.8727,New (< 12m),Normal (4-14d),None (0),0.0
+CLM-0003028,POL-103028,Health,11497.78,2597.98,57,18,Medical Emergency,High,0,Partial,Yes,Paid,12,Yes,10169.19,Rejected,4.4257,1.1306,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0003042,POL-103042,Motor,16737.07,822.13,13,34,Vehicle Collision,Low,0,Partial,Yes,Paid,20,Yes,12801.6,Approved,20.3582,1.3074,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0003058,POL-103058,Health,10075.58,2076.75,1,39,Outpatient Treatment,Low,0,Partial,Yes,Paid,1,Yes,10143.62,Approved,4.8516,0.9933,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0003061,POL-103061,Health,30436.82,997.33,4,33,Outpatient Treatment,Low,2,Complete,Yes,Overdue,20,Yes,26391.71,Approved,30.5183,1.1533,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0003063,POL-103063,Motor,9830.44,991.57,54,20,Vehicle Collision,High,1,Partial,Yes,Paid,9,Yes,7693.65,Approved,9.914,1.2777,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0003065,POL-103065,Life,51442.48,802.77,47,38,Critical Illness,Medium,1,Partial,No,Paid,31,Yes,40596.19,Rejected,64.0812,1.2672,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0003075,POL-103075,Health,11171.32,1183.73,68,20,Outpatient Treatment,High,0,Complete,Yes,Paid,9,Yes,8709.89,Approved,9.4374,1.2826,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0003079,POL-103079,Health,31678.46,661.69,8,18,Hospitalization,High,0,Complete,Yes,Paid,6,Yes,27882.9,Approved,47.8751,1.1361,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0003084,POL-103084,Motor,11411.21,1728.39,25,61,Vehicle Collision,Low,0,Partial,Yes,Paid,14,Yes,9567.81,Approved,6.6022,1.1927,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0003085,POL-103085,Health,57803.9,3693.15,133,35,Hospitalization,High,0,Partial,Yes,Paid,6,Yes,43052.47,Rejected,15.6517,1.3426,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0003089,POL-103089,Health,6091.23,2473.29,56,28,Medical Emergency,Low,0,Complete,Yes,Paid,3,Yes,6942.57,Approved,2.4628,0.8774,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0003090,POL-103090,Health,22978.23,3587.53,50,46,Outpatient Treatment,Medium,1,Partial,No,Paid,2,Yes,23302.91,Rejected,6.405,0.9861,Mature (> 48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0003106,POL-103106,Motor,21545.39,557.76,36,57,Vehicle Collision,Medium,3,Complete,Yes,Paid,17,Yes,16169.61,Approved,38.6284,1.3325,Established (12-48m),Delayed (> 14d),Frequent (3+),1.0
+CLM-0003114,POL-103114,Motor,4732.0,1576.85,4,62,Theft/Burglary,Low,2,Complete,Yes,Paid,28,No,4657.83,Approved,3.0009,1.0159,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0003125,POL-103125,Motor,14267.8,2286.27,20,22,Theft/Burglary,High,1,Partial,Yes,Paid,4,Yes,11994.18,Rejected,6.2406,1.1896,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0003142,POL-103142,Health,9829.93,707.84,51,29,Hospitalization,Medium,1,Complete,Yes,Paid,12,Yes,7882.63,Rejected,13.8872,1.247,Mature (> 48m),Normal (4-14d),Few (1-2),0.0
+CLM-0003146,POL-103146,Property,21107.6,1569.07,11,81,Fire Damage,High,1,Partial,Yes,Paid,10,Yes,21107.6,Approved,13.4523,1.0,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0003155,POL-103155,Property,37393.06,3182.52,125,52,Natural Hazard,Low,2,Missing,Yes,Overdue,8,Yes,38280.31,Rejected,11.7495,0.9768,Mature (> 48m),Normal (4-14d),Few (1-2),0.0
+CLM-0003158,POL-103158,Health,10723.69,1940.52,63,32,Outpatient Treatment,Medium,0,Complete,Yes,Paid,43,Yes,10236.03,Approved,5.5262,1.0476,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0003163,POL-103163,Life,41400.17,3589.41,32,50,Disability,Low,2,Complete,Yes,Paid,2,No,35228.46,Rejected,11.534,1.1752,Established (12-48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0003166,POL-103166,Health,10394.18,3531.81,4,60,Medical Emergency,High,1,Complete,Yes,Paid,22,Yes,10239.94,Approved,2.943,1.0151,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0003182,POL-103182,Health,36540.35,2213.32,19,23,Hospitalization,Medium,2,Complete,Yes,Pending,6,Yes,34754.88,Rejected,16.5093,1.0514,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0003199,POL-103199,Motor,25593.62,1651.8,109,31,Theft/Burglary,Medium,3,Complete,Yes,Pending,29,Yes,20155.16,Rejected,15.4944,1.2698,Mature (> 48m),Delayed (> 14d),Frequent (3+),0.0
+CLM-0003253,POL-103253,Motor,8594.58,1292.84,6,38,Vehicle Collision,Low,2,Complete,Yes,Paid,1,Yes,7235.88,Approved,6.6478,1.1878,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0003254,POL-103254,Motor,12622.03,523.98,75,22,Vehicle Collision,Low,0,Complete,No,Paid,1,Yes,11135.56,Rejected,24.0888,1.1335,Mature (> 48m),Immediate (<= 3d),None (0),0.0
+CLM-0003258,POL-103258,Property,6410.92,3014.3,55,45,Water Damage,Low,0,Complete,Yes,Paid,21,Yes,5051.84,Rejected,2.1268,1.269,Mature (> 48m),Delayed (> 14d),None (0),0.0
+CLM-0003260,POL-103260,Motor,9520.13,1262.83,4,50,Windshield Damage,High,1,Complete,Yes,Paid,6,Yes,8442.37,Rejected,7.5387,1.1277,New (< 12m),Normal (4-14d),Few (1-2),0.0
+CLM-0003270,POL-103270,Health,7926.36,2878.0,92,32,Surgical Procedure,Low,1,Missing,Yes,Paid,5,Yes,6890.58,Rejected,2.7541,1.1503,Mature (> 48m),Normal (4-14d),Few (1-2),0.0
+CLM-0003272,POL-103272,Health,19170.57,1871.03,64,51,Outpatient Treatment,Low,2,Complete,Yes,Paid,5,Yes,16339.88,Approved,10.246,1.1732,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0003273,POL-103273,Motor,7286.1,1233.85,55,27,Theft/Burglary,Low,0,Complete,Yes,Paid,0,Yes,7170.12,Approved,5.9052,1.0162,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0003287,POL-103287,Motor,5440.0,780.53,39,64,Theft/Burglary,Low,1,Complete,Yes,Pending,17,Yes,4094.83,Approved,6.9696,1.3285,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0003290,POL-103290,Motor,14580.29,1923.33,16,29,Theft/Burglary,Low,1,Complete,Yes,Paid,11,No,11050.18,Approved,7.5808,1.3195,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0003293,POL-103293,Life,8877.13,2276.23,8,26,Accidental Death,Medium,0,Complete,Yes,Paid,16,Yes,10408.12,Approved,3.8999,0.8529,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0003320,POL-103320,Motor,3759.69,1516.26,11,45,Vandalism,Low,0,Partial,Yes,Paid,40,Yes,2955.4,Approved,2.4796,1.2721,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0003329,POL-103329,Motor,13379.85,649.99,44,50,Vandalism,Low,2,Complete,Yes,Paid,16,Yes,10532.91,Rejected,20.5847,1.2703,Established (12-48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0003341,POL-103341,Motor,9416.78,1382.96,6,43,Vandalism,Low,2,Missing,Yes,Paid,22,Yes,9418.39,Approved,6.8091,0.9998,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0003351,POL-103351,Health,18976.84,1824.94,23,18,Hospitalization,Low,0,Complete,Yes,Paid,1,Yes,15743.57,Approved,10.3986,1.2054,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0003358,POL-103358,Property,12257.42,3638.16,37,22,Theft/Burglary,Low,0,Complete,Yes,Pending,12,Yes,13064.15,Approved,3.3691,0.9382,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0003366,POL-103366,Motor,11240.07,2145.69,18,41,Theft/Burglary,Low,0,Complete,Yes,Paid,7,Yes,10362.84,Approved,5.2384,1.0847,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0003368,POL-103368,Health,22290.32,1204.19,30,46,Surgical Procedure,High,0,Missing,Yes,Paid,1,Yes,16761.32,Approved,18.5106,1.3299,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0003371,POL-103371,Property,13113.43,938.76,81,42,Natural Hazard,Medium,0,Complete,Yes,Pending,17,Yes,11297.48,Approved,13.9689,1.1607,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0003382,POL-103382,Health,32613.59,2153.56,57,32,Outpatient Treatment,High,0,Missing,Yes,Paid,6,Yes,27769.76,Rejected,15.144,1.1744,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0003385,POL-103385,Health,22405.97,2350.77,7,58,Outpatient Treatment,Low,2,Missing,Yes,Paid,31,No,21628.0,Rejected,9.5313,1.036,New (< 12m),Delayed (> 14d),Few (1-2),0.0
+CLM-0003392,POL-103392,Life,40622.84,4840.95,24,49,Critical Illness,Low,1,Complete,Yes,Paid,6,Yes,38256.07,Approved,8.3915,1.0619,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0003403,POL-103403,Health,29569.46,696.73,17,54,Surgical Procedure,Medium,0,Complete,Yes,Overdue,9,No,30369.93,Rejected,42.4403,0.9736,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0003410,POL-103410,Motor,18274.05,1194.35,74,41,Theft/Burglary,Medium,0,Complete,Yes,Paid,3,No,13555.76,Approved,15.3004,1.3481,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0003415,POL-103415,Life,36489.2,3722.18,23,49,Terminal Illness,High,0,Partial,Yes,Paid,8,Yes,38815.28,Approved,9.8032,0.9401,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0003427,POL-103427,Motor,9898.19,773.9,8,55,Windshield Damage,Low,0,Complete,Yes,Paid,29,Yes,10002.49,Approved,12.79,0.9896,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0003437,POL-103437,Health,7035.63,1127.86,22,57,Outpatient Treatment,High,0,Complete,Yes,Paid,34,Yes,6249.19,Approved,6.238,1.1258,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0003438,POL-103438,Property,21695.18,3840.83,108,22,Fire Damage,Low,1,Partial,Yes,Paid,1,No,21848.43,Approved,5.6486,0.993,Mature (> 48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0003440,POL-103440,Health,18499.59,1234.5,68,42,Outpatient Treatment,Medium,0,Partial,Yes,Paid,10,No,19292.19,Rejected,14.9855,0.9589,Mature (> 48m),Normal (4-14d),None (0),0.0
+CLM-0003460,POL-103460,Motor,2946.28,2185.36,51,32,Vandalism,Low,0,Complete,Yes,Paid,2,Yes,2482.69,Approved,1.3482,1.1867,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0003469,POL-103469,Motor,18607.96,1670.07,39,36,Windshield Damage,Medium,0,Missing,Yes,Paid,2,Yes,18502.03,Approved,11.142,1.0057,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0003474,POL-103474,Motor,8779.09,1875.85,144,38,Windshield Damage,High,0,Partial,Yes,Pending,8,No,7258.82,Approved,4.6801,1.2094,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0003477,POL-103477,Motor,5917.08,2297.42,30,26,Theft/Burglary,Low,2,Partial,Yes,Pending,3,Yes,5088.51,Approved,2.5755,1.1628,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0003482,POL-103482,Motor,14410.84,1159.03,48,46,Theft/Burglary,Medium,1,Complete,Yes,Paid,23,Yes,13021.49,Approved,12.4335,1.1067,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0003505,POL-103505,Health,4726.4,1486.04,19,55,Hospitalization,Low,0,Complete,Yes,Paid,18,Yes,5026.55,Approved,3.1805,0.9403,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0003510,POL-103510,Motor,8474.18,1025.45,29,23,Vandalism,Medium,1,Complete,Yes,Paid,3,Yes,6558.79,Approved,8.2639,1.292,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0003512,POL-103512,Property,51743.35,1109.82,28,34,Theft/Burglary,Medium,0,Partial,Yes,Paid,15,No,39274.28,Rejected,46.6232,1.3175,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0003513,POL-103513,Health,22162.13,1800.69,26,36,Hospitalization,Medium,0,Missing,Yes,Pending,5,Yes,22070.76,Rejected,12.3076,1.0041,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0003514,POL-103514,Health,21909.07,2832.59,34,27,Surgical Procedure,Low,0,Complete,Yes,Paid,5,Yes,21261.99,Approved,7.7346,1.0304,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0003520,POL-103520,Property,32831.28,708.3,23,43,Fire Damage,High,0,Complete,Yes,Pending,38,Yes,29914.13,Rejected,46.3522,1.0975,Established (12-48m),Delayed (> 14d),None (0),0.0
+CLM-0003523,POL-103523,Life,46782.0,877.18,43,38,Terminal Illness,Medium,1,Complete,Yes,Paid,3,Yes,41230.86,Approved,53.3323,1.1346,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0003569,POL-103569,Health,22246.15,2082.36,5,57,Outpatient Treatment,Medium,1,Missing,Yes,Paid,8,Yes,16490.44,Rejected,10.6831,1.349,New (< 12m),Normal (4-14d),Few (1-2),0.0
+CLM-0003574,POL-103574,Health,21317.04,3282.5,4,18,Outpatient Treatment,Low,0,Complete,Yes,Paid,1,Yes,18718.59,Approved,6.4941,1.1388,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0003576,POL-103576,Life,41406.55,3381.0,14,36,Critical Illness,High,0,Complete,Yes,Paid,13,Yes,32838.42,Approved,12.2468,1.2609,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0003588,POL-103588,Motor,8133.59,2493.81,10,27,Vehicle Collision,Medium,6,Complete,Yes,Paid,16,Yes,6442.04,Approved,3.2615,1.2626,New (< 12m),Delayed (> 14d),Frequent (3+),1.0
+CLM-0003606,POL-103606,Motor,19890.26,659.2,36,18,Vandalism,High,0,Partial,Yes,Paid,19,Yes,14869.87,Approved,30.1733,1.3376,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0003608,POL-103608,Motor,19793.18,728.67,34,70,Vandalism,High,2,Complete,Yes,Paid,8,Yes,19772.18,Approved,27.1634,1.0011,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0003609,POL-103609,Health,8343.45,1865.36,43,44,Medical Emergency,Low,0,Partial,Yes,Pending,9,Yes,6391.48,Approved,4.4728,1.3054,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0003610,POL-103610,Health,2921.1,1698.64,4,49,Medical Emergency,Low,0,Complete,No,Paid,31,Yes,3113.16,Approved,1.7197,0.9383,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0003675,POL-103675,Property,31012.71,2554.59,11,47,Natural Hazard,Medium,0,Complete,Yes,Pending,27,Yes,29909.47,Approved,12.14,1.0369,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0003696,POL-103696,Property,26779.73,1440.92,131,32,Theft/Burglary,Low,1,Complete,Yes,Paid,46,No,29740.06,Rejected,18.5852,0.9005,Mature (> 48m),Delayed (> 14d),Few (1-2),0.0
+CLM-0003697,POL-103697,Health,17708.88,987.58,14,23,Medical Emergency,Low,5,Complete,Yes,Paid,17,Yes,18516.38,Rejected,17.9316,0.9564,Established (12-48m),Delayed (> 14d),Frequent (3+),0.0
+CLM-0003701,POL-103701,Motor,11529.85,1830.66,101,61,Windshield Damage,Medium,3,Complete,Yes,Paid,5,No,10468.16,Approved,6.2982,1.1014,Mature (> 48m),Normal (4-14d),Frequent (3+),1.0
+CLM-0003703,POL-103703,Health,3431.07,1826.18,9,41,Hospitalization,Low,0,Complete,Yes,Pending,8,Yes,3107.85,Approved,1.8788,1.104,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0003711,POL-103711,Motor,4181.5,2207.03,39,41,Windshield Damage,High,0,Complete,Yes,Pending,19,Yes,4193.59,Approved,1.8946,0.9971,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0003716,POL-103716,Motor,16027.82,2032.99,13,31,Vehicle Collision,Medium,0,Partial,Yes,Paid,0,Yes,16744.25,Rejected,7.8839,0.9572,Established (12-48m),Immediate (<= 3d),None (0),0.0
+CLM-0003718,POL-103718,Life,38944.2,2118.24,1,38,Critical Illness,Low,1,Partial,Yes,Pending,2,Yes,32207.16,Approved,18.3852,1.2092,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0003738,POL-103738,Motor,3088.4,1247.3,5,49,Vehicle Collision,Low,0,Partial,Yes,Paid,26,No,2451.25,Rejected,2.4761,1.2599,New (< 12m),Delayed (> 14d),None (0),0.0
+CLM-0003766,POL-103766,Health,15408.6,3358.68,4,32,Hospitalization,Low,0,Complete,Yes,Paid,7,Yes,18080.89,Approved,4.5877,0.8522,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0003768,POL-103768,Life,77486.84,1998.36,70,45,Accidental Death,Medium,0,Complete,Yes,Paid,3,Yes,65493.44,Approved,38.7752,1.1831,Mature (> 48m),Immediate (<= 3d),None (0),1.0
+CLM-0003773,POL-103773,Property,54064.49,900.44,91,75,Theft/Burglary,Medium,0,Complete,Yes,Paid,13,Yes,40775.89,Approved,60.0423,1.3259,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0003783,POL-103783,Health,28071.46,2659.6,106,18,Surgical Procedure,Medium,0,Complete,Yes,Paid,8,Yes,23283.27,Approved,10.5548,1.2056,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0003785,POL-103785,Life,19965.51,1954.31,42,29,Disability,Low,0,Complete,Yes,Paid,8,Yes,20402.5,Approved,10.2161,0.9786,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0003790,POL-103790,Health,7087.43,1310.11,30,55,Medical Emergency,Medium,2,Complete,Yes,Paid,17,Yes,7087.43,Approved,5.4098,1.0,Established (12-48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0003792,POL-103792,Life,21894.41,4180.48,10,59,Critical Illness,Low,1,Complete,Yes,Paid,2,Yes,25271.34,Approved,5.2373,0.8664,New (< 12m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0003794,POL-103794,Health,9694.91,1989.07,95,59,Surgical Procedure,Medium,0,Complete,Yes,Paid,8,Yes,8793.06,Approved,4.8741,1.1026,Mature (> 48m),Normal (4-14d),None (0),1.0
+CLM-0003798,POL-103798,Health,5858.11,2552.52,5,30,Outpatient Treatment,Low,1,Complete,Yes,Paid,27,Yes,4572.98,Approved,2.295,1.281,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0003800,POL-103800,Property,23663.29,2723.01,15,18,Water Damage,Medium,1,Complete,Yes,Paid,1,Yes,18522.27,Approved,8.6901,1.2776,Established (12-48m),Immediate (<= 3d),Few (1-2),1.0
+CLM-0003806,POL-103806,Property,42095.41,1801.11,6,28,Natural Hazard,Medium,1,Complete,Yes,Pending,10,No,32984.09,Rejected,23.3719,1.2762,New (< 12m),Normal (4-14d),Few (1-2),0.0
+CLM-0003808,POL-103808,Health,2399.3,3541.93,91,62,Hospitalization,Low,4,Partial,Yes,Paid,10,Yes,2173.04,Rejected,0.6774,1.1041,Mature (> 48m),Normal (4-14d),Frequent (3+),0.0
+CLM-0003817,POL-103817,Health,12508.29,3570.35,8,39,Hospitalization,Low,0,Complete,Yes,Paid,5,Yes,14546.94,Approved,3.5034,0.8599,New (< 12m),Normal (4-14d),None (0),1.0
+CLM-0003830,POL-103830,Property,26224.01,818.6,1,47,Water Damage,Medium,0,Partial,Yes,Paid,1,Yes,29286.24,Approved,32.0352,0.8954,New (< 12m),Immediate (<= 3d),None (0),1.0
+CLM-0003836,POL-103836,Motor,8637.55,659.21,44,66,Vehicle Collision,Low,1,Complete,Yes,Overdue,13,Yes,6667.95,Approved,13.1029,1.2954,Established (12-48m),Normal (4-14d),Few (1-2),1.0
+CLM-0003846,POL-103846,Health,30888.53,699.66,14,40,Outpatient Treatment,Medium,0,Complete,No,Paid,8,Yes,28664.93,Rejected,44.1479,1.0776,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0003850,POL-103850,Health,24614.13,1287.39,4,31,Hospitalization,Medium,0,Complete,Yes,Paid,16,Yes,19057.32,Approved,19.1194,1.2916,New (< 12m),Delayed (> 14d),None (0),1.0
+CLM-0003852,POL-103852,Property,54219.07,1213.84,130,46,Fire Damage,Medium,1,Complete,Yes,Paid,7,No,43638.12,Rejected,44.6674,1.2425,Mature (> 48m),Normal (4-14d),Few (1-2),0.0
+CLM-0003858,POL-103858,Property,15284.16,1232.8,8,46,Theft/Burglary,Low,1,Complete,Yes,Paid,32,No,16073.21,Approved,12.3979,0.9509,New (< 12m),Delayed (> 14d),Few (1-2),1.0
+CLM-0003875,POL-103875,Motor,33815.55,1667.75,10,46,Windshield Damage,High,0,Partial,Yes,Pending,1,Yes,34863.73,Rejected,20.2762,0.9699,New (< 12m),Immediate (<= 3d),None (0),0.0
+CLM-0003879,POL-103879,Motor,8268.74,2155.31,2,60,Vehicle Collision,Low,0,Partial,Yes,Overdue,4,Yes,6466.91,Rejected,3.8365,1.2786,New (< 12m),Normal (4-14d),None (0),0.0
+CLM-0003883,POL-103883,Motor,15204.7,1441.75,190,18,Theft/Burglary,Medium,4,Complete,Yes,Overdue,4,Yes,17714.71,Rejected,10.546,0.8583,Mature (> 48m),Normal (4-14d),Frequent (3+),0.0
+CLM-0003893,POL-103893,Health,3592.34,985.72,20,44,Hospitalization,Medium,0,Complete,Yes,Overdue,24,Yes,4154.61,Approved,3.6444,0.8647,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0003897,POL-103897,Health,30132.62,2380.04,111,18,Medical Emergency,Medium,1,Missing,Yes,Pending,9,Yes,26482.34,Approved,12.6606,1.1378,Mature (> 48m),Normal (4-14d),Few (1-2),1.0
+CLM-0003900,POL-103900,Life,48061.53,2765.49,37,63,Critical Illness,Low,0,Complete,Yes,Paid,4,Yes,38424.9,Approved,17.379,1.2508,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0003902,POL-103902,Health,19059.56,3273.15,93,44,Medical Emergency,Low,4,Missing,Yes,Paid,9,Yes,14423.82,Rejected,5.823,1.3214,Mature (> 48m),Normal (4-14d),Frequent (3+),0.0
+CLM-0003911,POL-103911,Health,21184.13,861.89,88,48,Surgical Procedure,Medium,1,Complete,Yes,Overdue,26,Yes,18172.45,Approved,24.5787,1.1657,Mature (> 48m),Delayed (> 14d),Few (1-2),1.0
+CLM-0003915,POL-103915,Property,11669.08,3922.14,4,54,Water Damage,Low,0,Complete,Yes,Paid,28,Yes,9026.1,Rejected,2.9752,1.2928,New (< 12m),Delayed (> 14d),None (0),0.0
+CLM-0003916,POL-103916,Motor,2897.25,1746.09,24,45,Vandalism,Low,1,Missing,Yes,Paid,6,Yes,2241.14,Rejected,1.6593,1.2928,Established (12-48m),Normal (4-14d),Few (1-2),0.0
+CLM-0003929,POL-103929,Health,17492.04,3203.97,16,35,Medical Emergency,Low,0,Complete,Yes,Overdue,11,Yes,14332.42,Rejected,5.4595,1.2205,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0003931,POL-103931,Motor,1005.0,1179.48,2,36,Theft/Burglary,Low,2,Complete,Yes,Paid,6,Yes,816.06,Approved,0.8521,1.2315,New (< 12m),Normal (4-14d),Few (1-2),1.0
+CLM-0003942,POL-103942,Life,74660.1,4081.18,13,43,Disability,Low,0,Complete,Yes,Paid,40,Yes,58197.97,Approved,18.2938,1.2829,Established (12-48m),Delayed (> 14d),None (0),1.0
+CLM-0003951,POL-103951,Life,41904.7,964.99,25,33,Terminal Illness,High,3,Complete,No,Paid,2,Yes,37804.7,Rejected,43.425,1.1085,Established (12-48m),Immediate (<= 3d),Frequent (3+),0.0
+CLM-0003956,POL-103956,Health,9918.4,2094.7,32,65,Outpatient Treatment,Low,0,Complete,Yes,Overdue,5,Yes,10118.1,Rejected,4.735,0.9803,Established (12-48m),Normal (4-14d),None (0),0.0
+CLM-0003963,POL-103963,Life,70142.84,4592.78,119,67,Disability,Medium,2,Partial,Yes,Paid,3,Yes,69886.29,Rejected,15.2724,1.0037,Mature (> 48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0003964,POL-103964,Motor,13086.93,1399.26,16,65,Vehicle Collision,Low,1,Complete,Yes,Paid,1,Yes,10041.13,Rejected,9.3528,1.3033,Established (12-48m),Immediate (<= 3d),Few (1-2),0.0
+CLM-0003967,POL-103967,Property,16048.98,835.54,43,51,Theft/Burglary,Low,0,Complete,Yes,Paid,2,Yes,13195.01,Approved,19.2079,1.2163,Established (12-48m),Immediate (<= 3d),None (0),1.0
+CLM-0003969,POL-103969,Property,46476.67,711.83,31,60,Water Damage,Medium,0,Complete,Yes,Paid,14,Yes,44715.77,Approved,65.2918,1.0394,Established (12-48m),Normal (4-14d),None (0),1.0
+CLM-0003994,POL-103994,Motor,11387.88,2063.22,128,44,Windshield Damage,High,0,Partial,Yes,Paid,24,Yes,13153.55,Approved,5.5195,0.8658,Mature (> 48m),Delayed (> 14d),None (0),1.0
+CLM-0004006,POL-104006,Health,33453.88,3160.94,61,39,Outpatient Treatment,Medium,3,Complete,Yes,Paid,2,Yes,33153.15,Approved,10.5835,1.0091,Mature (> 48m),Immediate (<= 3d),Frequent (3+),1.0
+CLM-0004008,POL-104008,Motor,21179.12,1629.83,45,34,Windshield Damage,Medium,0,Missing,No,Paid,16,No,21052.52,Rejected,12.9947,1.006,Established (12-48m),Delayed (> 14d),None (0),0.0

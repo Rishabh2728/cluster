@@ -1,0 +1,4 @@
+policy_tenure_category,total_claims,approval_rate_pct,avg_premium
+Mature (> 48m),31527,70.13,2093.32
+Established (12-48m),56925,66.35,2094.46
+New (< 12m),31548,63.56,2104.12

@@ -1,0 +1,4 @@
+incident_severity,total_claims,approval_rate_pct,avg_claim_amount,avg_estimate
+High,20517,66.31,36608.45,33246.03
+Medium,45585,66.80,23520.87,21416.77
+Low,53898,66.56,15238.24,13868.04

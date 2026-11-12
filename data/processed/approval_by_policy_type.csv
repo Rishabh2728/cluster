@@ -1,0 +1,5 @@
+policy_type,total_claims,approved_count,rejected_count,approval_rate_pct,avg_claim_amount
+Property,17682,11835,5847,66.93,26551.01
+Motor,42180,28129,14051,66.69,11732.79
+Health,42020,27934,14086,66.48,18748.95
+Life,18118,12032,6086,66.41,49255.43

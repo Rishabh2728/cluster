@@ -1,0 +1,153 @@
+{
+    "project_title": "Predicting Insurance Claim Approval Using Apache Spark",
+    "student_info": {
+        "name": "Rishabh Kumar",
+        "roll_no": "49",
+        "reg_no": "12310491",
+        "section": "K2P23PD",
+        "course_code": "INT315",
+        "course_name": "Cluster Computing",
+        "project_framework": "Apache Spark & Spark MLlib",
+        "programming_language": "Python (PySpark)",
+        "project_title": "Predicting Insurance Claim Approval Using Apache Spark",
+        "project_subtitle": "A Distributed Machine Learning Approach for Insurance Claim Classification Using PySpark"
+    },
+    "execution_timestamp": "2026-11-02T14:24:32.961595",
+    "spark_version": "4.3.0",
+    "master": "local[*]",
+    "raw_records": 120000,
+    "clean_records": 120000,
+    "cleaning_metrics": {
+        "initial_raw_records": 120000,
+        "duplicate_records_dropped": 0,
+        "invalid_records_dropped": 0,
+        "total_records_dropped": 0,
+        "cleaned_records": 120000,
+        "retention_rate_pct": 100.0
+    },
+    "kpis": {
+        "total_claims": 120000,
+        "approved_claims": 79930,
+        "rejected_claims": 40070,
+        "approval_rate_pct": 66.61,
+        "rejection_rate_pct": 33.39,
+        "avg_claim_amount": 22038.38,
+        "avg_annual_premium": 2096.7,
+        "total_claimed_amount": 2644605054.21
+    },
+    "logistic_regression_metrics": {
+        "model_name": "Logistic Regression",
+        "accuracy": 0.7946,
+        "precision": 0.7902,
+        "recall": 0.7946,
+        "f1_score": 0.7869,
+        "roc_auc": 0.8393,
+        "pr_auc": 0.8968,
+        "tp": 14253,
+        "fp": 3354,
+        "tn": 4625,
+        "fn": 1526,
+        "precision_rejected": 0.7519,
+        "recall_rejected": 0.5796,
+        "f1_rejected": 0.6546,
+        "precision_approved": 0.8095,
+        "recall_approved": 0.9033
+    },
+    "random_forest_metrics": {
+        "model_name": "Random Forest Classifier",
+        "accuracy": 0.7916,
+        "precision": 0.7893,
+        "recall": 0.7916,
+        "f1_score": 0.7802,
+        "roc_auc": 0.8362,
+        "pr_auc": 0.8934,
+        "tp": 14532,
+        "fp": 3704,
+        "tn": 4275,
+        "fn": 1247,
+        "precision_rejected": 0.7742,
+        "recall_rejected": 0.5358,
+        "f1_rejected": 0.6333,
+        "precision_approved": 0.7969,
+        "recall_approved": 0.921
+    },
+    "selected_model": {
+        "name": "Logistic Regression",
+        "metrics": {
+            "model_name": "Logistic Regression",
+            "accuracy": 0.7946,
+            "precision": 0.7902,
+            "recall": 0.7946,
+            "f1_score": 0.7869,
+            "roc_auc": 0.8393,
+            "pr_auc": 0.8968,
+            "tp": 14253,
+            "fp": 3354,
+            "tn": 4625,
+            "fn": 1526,
+            "precision_rejected": 0.7519,
+            "recall_rejected": 0.5796,
+            "f1_rejected": 0.6546,
+            "precision_approved": 0.8095,
+            "recall_approved": 0.9033
+        },
+        "rationale": "Logistic Regression selected with superior composite score (0.7664 vs 0.7537). It provided an ROC-AUC of 0.8393 with robust generalization and parameter efficiency.",
+        "model_path": "C:\\Users\\Rishabh\\Desktop\\cluster ca\\models\\selected_model"
+    },
+    "partition_demo": {
+        "initial_partitions": 8,
+        "repartitioned_count": 4,
+        "coalesced_count": 2,
+        "aggregation_time_seconds": 1.719
+    },
+    "benchmark_results": [
+        {
+            "partitions": 2,
+            "iterations": 3,
+            "min_seconds": 1.2261,
+            "max_seconds": 2.0452,
+            "mean_seconds": 1.5475,
+            "median_seconds": 1.3713
+        },
+        {
+            "partitions": 4,
+            "iterations": 3,
+            "min_seconds": 0.6147,
+            "max_seconds": 1.4549,
+            "mean_seconds": 1.0787,
+            "median_seconds": 1.1665
+        },
+        {
+            "partitions": 8,
+            "iterations": 3,
+            "min_seconds": 0.6615,
+            "max_seconds": 0.7911,
+            "mean_seconds": 0.7064,
+            "median_seconds": 0.6667
+        }
+    ],
+    "charts_generated": [
+        "01_approval_dist",
+        "02_policy_type",
+        "03_documentation",
+        "04_amount_dist",
+        "05_confusion_matrix",
+        "06_roc_curves",
+        "07_model_comparison",
+        "08_feature_importance",
+        "09_previous_claims",
+        "10_payment_status",
+        "11_benchmark"
+    ],
+    "sample_prediction": {
+        "predicted_outcome": "Approved",
+        "approval_probability": 92.6,
+        "rejection_probability": 7.4,
+        "claim_to_premium_ratio": 6.8182,
+        "claim_to_estimate_ratio": 1.0417,
+        "policy_type": "Motor",
+        "claim_amount": 7500.0,
+        "disclaimer": "ACADEMIC NOTICE: This prediction is generated by a synthetic educational Spark MLlib model developed for university course INT315. It must NOT be used for real commercial, legal, or operational claim adjudication."
+    },
+    "total_execution_seconds": 150.35
+}

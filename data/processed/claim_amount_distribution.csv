@@ -1,0 +1,3 @@
+claim_approval,claim_count,min_amount,mean_amount,max_amount,stddev_amount
+Approved,79930,400.71,21727.47,198173.28,20203.23
+Rejected,40070,399.6,22658.56,188941.76,21369.96

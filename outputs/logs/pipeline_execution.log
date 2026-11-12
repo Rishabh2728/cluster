@@ -1,0 +1,49 @@
+[2026-11-02 14:22:02] [INFO] ==========================================================================
+[2026-11-02 14:22:02] [INFO]   INT315 - CLUSTER COMPUTING PROJECT PIPELINE EXECUTION
+[2026-11-02 14:22:02] [INFO]   PREDICTING INSURANCE CLAIM APPROVAL USING APACHE SPARK
+[2026-11-02 14:22:02] [INFO]   Student: Rishabh Kumar | Roll: 49 | Reg: 12310491
+[2026-11-02 14:22:02] [INFO]   Section: K2P23PD | Course: INT315 (Cluster Computing)
+[2026-11-02 14:22:02] [INFO] ==========================================================================
+[2026-11-02 14:22:02] [INFO] [Step 1/14] Using existing synthetic dataset (13.58 MB): C:\Users\Rishabh\Desktop\cluster ca\data\raw\insurance_claims.csv
+[2026-11-02 14:22:02] [INFO] [Step 2/14] Initializing Apache Spark Session in local[*] mode...
+[2026-11-02 14:22:17] [INFO]   Spark Version       : 4.3.0
+[2026-11-02 14:22:17] [INFO]   Execution Master    : local[*]
+[2026-11-02 14:22:17] [INFO]   Default Parallelism : 4
+[2026-11-02 14:22:17] [INFO]   Python Version      : 3.13.2
+[2026-11-02 14:22:17] [INFO] [Step 3/14] Ingesting CSV records into distributed Spark DataFrame...
+[2026-11-02 14:22:29] [INFO]   Raw Records Ingested : 120,000
+[2026-11-02 14:22:29] [INFO]   Initial Partitions   : 4
+[2026-11-02 14:22:29] [INFO] [Step 4/14] Executing distributed cleaning & domain validation...
+[2026-11-02 14:22:40] [INFO]   Clean Claim Records  : 120,000
+[2026-11-02 14:22:40] [INFO]   Duplicates Dropped   : 0
+[2026-11-02 14:22:40] [INFO]   Invalid Rows Dropped : 0
+[2026-11-02 14:22:40] [INFO]   Data Retention Rate  : 100.0%
+[2026-11-02 14:22:40] [INFO] [Step 5/14] Applying feature engineering & risk ratios...
+[2026-11-02 14:22:41] [INFO]   Engineered features cached across partitions.
+[2026-11-02 14:22:41] [INFO] [Step 6/14] Executing Spark SQL exploratory analyses...
+[2026-11-02 14:23:16] [INFO]   Exported EDA Table: approval_by_policy_type.csv (4 rows)
+[2026-11-02 14:23:17] [INFO]   Exported EDA Table: approval_by_documentation.csv (3 rows)
+[2026-11-02 14:23:18] [INFO]   Exported EDA Table: approval_by_severity.csv (3 rows)
+[2026-11-02 14:23:18] [INFO]   Exported EDA Table: approval_by_payment_status.csv (3 rows)
+[2026-11-02 14:23:19] [INFO]   Exported EDA Table: approval_by_tenure.csv (3 rows)
+[2026-11-02 14:23:19] [INFO]   Exported EDA Table: claim_amount_distribution.csv (2 rows)
+[2026-11-02 14:23:20] [INFO]   Exported EDA Table: previous_claims_vs_approval.csv (7 rows)
+[2026-11-02 14:23:20] [INFO]   Exported Clean Sample: cleaned_claims_sample.csv
+[2026-11-02 14:23:20] [INFO] [Step 7/14] Splitting data into reproducible 80:20 Train/Test partitions...
+[2026-11-02 14:23:22] [INFO] [Step 8/14] Training classification pipelines via Spark MLlib...
+[2026-11-02 14:23:53] [INFO] [Step 9/14] Evaluating models on holdout test partition...
+[2026-11-02 14:24:01] [INFO] [Step 10/14] Comparing models and persisting best pipeline...
+[2026-11-02 14:24:04] [INFO]   Selected Model Path : C:\Users\Rishabh\Desktop\cluster ca\models\selected_model
+[2026-11-02 14:24:04] [INFO] [Step 11/14] Executing Spark partitioning mechanics demonstration...
+[2026-11-02 14:24:09] [INFO] [Step 12/14] Running performance benchmark across 2, 4, and 8 partitions...
+[2026-11-02 14:24:20] [INFO] [Step 13/14] Generating publication-grade charts from Spark results...
+[2026-11-02 14:24:32] [INFO] [Step 14/14] Executing inference engine test on sample incoming claim...
+[2026-11-02 14:24:32] [INFO]   Sample Claim Outcome : Approved
+[2026-11-02 14:24:32] [INFO]   Approval Probability : 92.6%
+[2026-11-02 14:24:32] [INFO]   Rejection Probability: 7.4%
+[2026-11-02 14:24:32] [INFO]   Summary JSON saved to : C:\Users\Rishabh\Desktop\cluster ca\data\processed\project_summary.json
+[2026-11-02 14:24:32] [INFO] ==========================================================================
+[2026-11-02 14:24:32] [INFO]   PIPELINE EXECUTION COMPLETED IN 150.35 SECONDS
+[2026-11-02 14:24:32] [INFO]   Log File Available At: C:\Users\Rishabh\Desktop\cluster ca\outputs\logs\pipeline_execution.log
+[2026-11-02 14:24:32] [INFO] ==========================================================================
+[2026-11-02 14:24:32] [INFO] Shutting down Apache Spark Session gracefully...

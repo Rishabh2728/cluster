@@ -1,0 +1,33 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.2, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Rishabh\AppData\Local\Programs\Python\Python313\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Rishabh\Desktop\cluster ca
+plugins: anyio-4.9.0, Faker-37.12.0, asyncio-1.4.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 9 items
+
+tests/test_dataset_generator.py::test_claims_generation_and_schema PASSED [ 11%]
+tests/test_dataset_generator.py::test_claims_reproducibility PASSED      [ 22%]
+tests/test_dataset_generator.py::test_target_class_balance_and_anomalies PASSED [ 33%]
+tests/test_feature_engineering.py::test_data_cleaning_and_imputation PASSED [ 44%]
+tests/test_feature_engineering.py::test_feature_engineering_calculations PASSED [ 55%]
+tests/test_feature_engineering.py::test_data_leakage_prevention PASSED   [ 66%]
+tests/test_model_pipeline.py::test_model_training_and_evaluation PASSED  [ 77%]
+tests/test_model_pipeline.py::test_single_prediction_inference PASSED    [ 88%]
+tests/test_model_pipeline.py::test_partitioning_mechanics PASSED         [100%]
+
+============================== warnings summary ===============================
+tests/test_feature_engineering.py::test_data_cleaning_and_imputation
+  C:\Users\Rishabh\AppData\Local\Programs\Python\Python313\Lib\site-packages\jupyter_client\connect.py:22: DeprecationWarning: Jupyter is migrating its paths to use standard platformdirs
+  given by the platformdirs library.  To remove this warning and
+  see the appropriate new directories, set the environment variable
+  `JUPYTER_PLATFORM_DIRS=1` and then run `jupyter --paths`.
+  The use of platformdirs will be the default in `jupyter_core` v6
+    from jupyter_core.paths import jupyter_data_dir, jupyter_runtime_dir, secure_write
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=================== 9 passed, 1 warning in 77.63s (0:01:17) ===================
+SUCCESS: The process with PID 32612 (child process of PID 5688) has been terminated.
+SUCCESS: The process with PID 5688 (child process of PID 31956) has been terminated.
+SUCCESS: The process with PID 31956 (child process of PID 32204) has been terminated.
+

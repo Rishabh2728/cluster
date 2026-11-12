@@ -1,0 +1,4 @@
+partitions,iterations,min_seconds,max_seconds,mean_seconds,median_seconds
+2,3,1.2261,2.0452,1.5475,1.3713
+4,3,0.6147,1.4549,1.0787,1.1665
+8,3,0.6615,0.7911,0.7064,0.6667

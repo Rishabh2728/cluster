@@ -1,0 +1,4 @@
+premium_payment_status,total_claims,approved_count,rejected_count,approval_rate_pct
+Paid,93460,66956,26504,71.64
+Pending,16917,9814,7103,58.01
+Overdue,9623,3160,6463,32.84
