@@ -1,0 +1,527 @@
+================================================================================
+          INT315: CLUSTER COMPUTING — COMPLETE VIVA PREPARATION GUIDE
+               "FROM ZERO TO FULL MASTERY" (STUDENT EDITION)
+================================================================================
+
+ACADEMIC & STUDENT CREDENTIALS:
+--------------------------------------------------------------------------------
+Student Name         : Rishabh Kumar
+Roll Number          : 49
+Registration Number  : 12310491
+Section              : K2P23PD (B.Tech Computer Science & Engineering)
+Course Code          : INT315
+Course Title         : Cluster Computing
+Under the Guidance of: Priyanka (UID: 33488)
+Department           : Discipline of CSE/IT, School of Computer Science & Engineering
+University           : Lovely Professional University, Punjab
+Project Title        : Predicting Insurance Claim Approval Using Apache Spark
+Subtitle             : A Distributed Machine Learning Approach for Insurance Claim
+                       Classification Using PySpark and MLlib
+GitHub Repository    : https://github.com/Rishabh2728/cluster
+Project Drive Link   : https://drive.google.com/drive/folders/1-yfmwB2SLsgniBJJbzOGxm-DKYwVwLt4?usp=sharing
+Plagiarism Score     : 0% Plagiarism / 100% Unique (Turnitin / DrillBit Verified)
+
+================================================================================
+SECTION 1: THE 60-SECOND OPENING PITCH (MEMORIZE THIS WORD-FOR-WORD)
+================================================================================
+
+Examiner: "Rishabh, introduce yourself and explain what your project is about."
+
+Your exact response:
+"Good morning / afternoon, respected examiner. My name is Rishabh Kumar, Roll 49,
+Registration Number 12310491 from section K2P23PD.
+
+Under the guidance of Assistant Professor Priyanka ma'am, I have developed an end-to-end
+distributed cluster computing project titled 'Predicting Insurance Claim Approval
+Using Apache Spark'.
+
+In insurance operations, processing large volumes of claims with traditional single-node
+Python tools like Pandas encounters severe memory caps and processing bottlenecks. To
+solve this, I built a distributed machine learning pipeline using Apache Spark 4.3.0
+and PySpark MLlib in local[*] multi-core execution mode.
+
+My pipeline generates a realistic 120,000-record claims dataset across Health, Motor,
+Life, and Property sectors, ingests it using an explicit StructType schema, performs
+distributed data cleaning, engineers risk ratios, and trains two Spark MLlib models:
+Logistic Regression and Random Forest.
+
+My Logistic Regression model achieved an accuracy of 79.46%, an ROC-AUC of 0.8393,
+and a PR-AUC of 0.8968, catching 4,625 true rejections. I also benchmarked partition
+scalability across 2, 4, and 8 partitions, showing a 2.06x speedup, and deployed
+an interactive Streamlit dashboard for real-time claim scoring.
+
+All 9 unit tests pass, and the report has a verified 0% plagiarism score."
+
+================================================================================
+SECTION 2: FOUNDATIONAL CLUSTER COMPUTING THEORY (GROUND 0 CONCEPTS)
+================================================================================
+
+Q1: What is Cluster Computing?
+A: Cluster computing is a distributed computing paradigm where multiple independent
+   computers (called nodes), connected through a high-speed local network or virtualized
+   cluster, work together as a single unified system. It provides horizontal scalability
+   (adding more machines) and high availability to process datasets that exceed the RAM
+   and compute capacity of any single machine.
+
+Q2: What is the difference between Vertical Scaling and Horizontal Scaling?
+A: - Vertical Scaling (Scale-Up): Adding more CPU, RAM, or SSD to a single existing
+     computer. It has hard physical limits and becomes extremely expensive.
+   - Horizontal Scaling (Scale-Out): Adding more commodity machines (nodes) to a
+     cluster. Apache Spark and Hadoop are designed specifically for horizontal scaling.
+
+Q3: Why did you choose Apache Spark over Hadoop MapReduce?
+A: 1. Speed: Spark is up to 100x faster in memory and 10x faster on disk than MapReduce.
+   2. In-Memory Processing: MapReduce writes all intermediate outputs to physical disk
+      (HDFS) between map and reduce phases. Spark keeps intermediate data in RAM
+      using Resilient Distributed Datasets (RDDs) and DataFrames.
+   3. Execution Engine: Spark uses a Directed Acyclic Graph (DAG) optimizer that
+      chains operations and minimizes data shuffling, whereas MapReduce strictly
+      enforces a 2-stage Map -> Reduce paradigm.
+   4. Rich Ecosystem: Spark has built-in Spark SQL, Spark MLlib, Spark Streaming,
+      and GraphX in a single framework.
+
+Q4: What is PySpark, and how does it interact with Apache Spark?
+A: PySpark is the Python API for Apache Spark. Apache Spark itself is written in Scala
+   and runs on the Java Virtual Machine (JVM). PySpark uses an inter-process bridge
+   called Py4J. The Python driver program communicates with a JavaSparkContext in the
+   JVM. When distributed operations run, tasks are executed by worker JVMs. Data is
+   serialized between Python and Java using Py4J.
+
+Q5: What does execution master `local[*]` mean?
+A: In Apache Spark, `local[*]` runs Spark in local mode on a single machine, where the
+   asterisk `[*]` instructs Spark to spawn as many worker executor threads as there are
+   logical CPU cores on the host machine. On my laptop, it utilized all available CPU
+   cores in parallel. It simulates cluster behavior locally without requiring physical
+   multi-node networking.
+
+Q6: What is the difference between RDD, DataFrame, and Dataset in Spark?
+A: - RDD (Resilient Distributed Dataset): The fundamental, low-level abstraction in
+     Spark. It is an immutable, lazily evaluated, partitioned collection of raw Java/Python
+     objects. It provides fault tolerance via lineage graphs, but lacks schema metadata
+     and Catalyst query optimization.
+   - DataFrame: A distributed collection of data organized into named columns (like a
+     SQL table). It includes schema metadata and is automatically optimized by Spark's
+     Catalyst Optimizer and Tungsten execution engine. We used DataFrames in this project.
+   - Dataset: An extension of DataFrames with compile-time type safety, available in
+     Scala and Java. In Python (PySpark), DataFrames and Datasets are unified because
+     Python is dynamically typed.
+
+Q7: What is Lazy Evaluation in Apache Spark? Why is it useful?
+A: Lazy evaluation means Spark does NOT execute computations immediately when you define
+   them. Instead, Spark simply records the sequence of operations as a Directed Acyclic
+   Graph (DAG) of logical transformations.
+   Execution only starts when an "Action" (such as .count(), .collect(), or .write) is called.
+   Benefit: It allows the Catalyst Optimizer to analyze the entire workflow, prune unused
+   columns, push down filters, and combine operations to create the fastest physical plan.
+
+Q8: What is the difference between a Transformation and an Action?
+A: - Transformation: A lazy operation that takes a DataFrame/RDD and returns a new
+     DataFrame/RDD. No actual computation happens. Examples: .filter(), .select(),
+     .withColumn(), .groupBy(), .repartition(), .dropDuplicates().
+   - Action: An eager operation that triggers DAG execution and returns a non-DataFrame
+     result to the driver program or writes data to storage. Examples: .count(),
+     .collect(), .show(), .take(), .write.csv(), .save().
+
+Q9: What is the difference between Narrow and Wide Transformations?
+A: - Narrow Transformation: Each input partition contributes to only ONE output partition.
+     Data does not need to move across the network or worker cores. Examples: .filter(),
+     .select(), .withColumn(). These execute fast within the same stage.
+   - Wide Transformation: Multiple input partitions contribute to multiple output partitions.
+     Data must be redistributed across cores or nodes. This process is called SHUFFLING.
+     Examples: .groupBy(), .orderBy(), .distinct(), .repartition(), .join().
+     Wide transformations define stage boundaries.
+
+Q10: What is Shuffling in Spark and why is it expensive?
+A: Shuffling is the physical redistribution of data across partitions, cores, or cluster
+   nodes during wide transformations. It is the most expensive operation in cluster
+   computing because it involves:
+   1. Serializing data from memory to disk.
+   2. Network transmission between nodes (or inter-thread copying).
+   3. Deserializing data and sorting/merging it in memory.
+   Minimizing shuffles is the #1 optimization rule in Spark.
+
+Q11: What is a Partition in Spark?
+A: A partition is a logical, atomic chunk of a distributed dataset. Partitions represent
+   the fundamental unit of parallelism: one executor task processes exactly one partition
+   at any given moment. For example, if you have 8 partitions and 8 CPU cores, all 8 tasks
+   run simultaneously in parallel.
+
+Q12: What is the difference between `repartition()` and `coalesce()`?
+A: - `repartition(k)`: Forces a full, round-robin shuffle of all data across all partitions
+     to produce exactly k evenly distributed partitions. Can increase or decrease partitions.
+     Incurs high shuffle cost.
+   - `coalesce(k)`: Merges existing adjacent partitions locally without triggering a full
+     shuffle. It can ONLY decrease partitions (e.g., from 8 to 2). It is much faster
+     than repartition for down-scaling.
+
+Q13: How does Spark achieve Fault Tolerance?
+A: Spark achieves fault tolerance through RDD/DataFrame LINEAGE (the DAG). Instead of
+   duplicating all data in memory across nodes, Spark remembers the exact recipe
+   (transformations) used to compute each partition from the base data. If an executor
+   crashes and loses partition #3, Spark simply re-executes the lineage graph for
+   partition #3 only on another surviving core or node.
+
+Q14: What is the Spark Catalyst Optimizer?
+A: The Catalyst Optimizer is Spark SQL's query optimization engine. It takes logical
+   DataFrame queries and passes them through four stages:
+   1. Analysis: Resolves column names and table references against a catalog.
+   2. Logical Optimization: Applies rules like predicate pushdown (filtering early)
+      and column projection pruning (discarding unused columns).
+   3. Physical Planning: Generates multiple physical execution plans and picks the
+      one with the lowest estimated cost (e.g., choosing BroadcastHashJoin vs SortMergeJoin).
+   4. Code Generation (Tungsten): Generates highly efficient Java bytecode on the fly
+      using Whole-Stage Code Generation.
+
+================================================================================
+SECTION 3: PROJECT ARCHITECTURE & IMPLEMENTATION (STEP-BY-STEP)
+================================================================================
+
+Q15: What is the exact problem your project solves?
+A: In the insurance industry, evaluating thousands of incoming claims manually is slow,
+   subjective, and costly. Fraudulent or ineligible claims that slip through cost insurers
+   millions, while erroneously rejecting valid claims angers customers and violates
+   regulations. My project automates binary adjudication (Approved vs. Rejected) at scale
+   using distributed machine learning, handling 120,000 claim records efficiently.
+
+Q16: Tell me about your dataset. How was it created?
+A: - Size: 120,000 records, 17 columns.
+   - Nature: Synthetically generated using a deterministic random seed (Seed 42).
+   - Why Synthetic? Real insurance claims contain Protected Health Information (PHI)
+     and proprietary financial records protected by HIPAA and GDPR. Synthetic data
+     allows 100% reproducible experiments, known feature correlations, controlled
+     class imbalance, and zero privacy or copyright issues.
+   - Class Distribution: 79,930 Approved (66.61%) and 40,070 Rejected (33.39%).
+   - Sectors covered: Health, Motor, Life, Property.
+
+Q17: What are the 17 fields in your dataset?
+A: 1. claim_id (Unique identifier, CLM-xxxxxx)
+   2. policy_id (Policy identifier, POL-xxxxxx)
+   3. policy_type (Health, Motor, Life, Property)
+   4. claim_amount (Requested claim payout, $500 - $150,000)
+   5. annual_premium (Annual premium paid, $300 - $12,000)
+   6. policy_tenure_months (Duration policy has been active, 1 - 240 months)
+   7. customer_age (Age of applicant, 18 - 85 years)
+   8. incident_type (e.g., Vehicle Collision, Water Damage, Hospitalization)
+   9. incident_severity (Low, Medium, High)
+   10. previous_claims (Prior claims filed, 0 to 6)
+   11. documentation_status (Complete, Partial, Missing)
+   12. policy_active (Yes / No)
+   13. premium_payment_status (Paid, Pending, Overdue)
+   14. claim_submission_delay (Days elapsed before reporting, 0 - 90 days)
+   15. incident_reported (Reported to police/authorities: Yes / No)
+   16. repair_or_treatment_estimate (Independent professional estimate, $)
+   17. claim_approval (Target label: Approved / Rejected)
+
+Q18: How did you ingest the CSV into Spark?
+A: In `src/data_loader.py`, I loaded the CSV into a Spark DataFrame using an EXPLICIT
+   `StructType` schema containing `StringType`, `DoubleType`, and `IntegerType` fields.
+   I purposely did NOT use `inferSchema=True` because inferSchema forces Spark to make
+   two full sequential passes over the entire CSV file (one pass to guess data types,
+   and a second pass to load data). Explicit schemas load data in a single pass, enforce
+   strict data contracts, and prevent runtime casting bugs.
+
+Q19: How did you clean the data in Spark?
+A: In `src/data_cleaning.py`:
+   1. Deduplication: Used Spark's `.dropDuplicates(["claim_id"])` to eliminate duplicate rows.
+   2. Validity Checks: Filtered out invalid or negative numbers using `.filter()` (e.g.,
+      claim_amount > 0 and customer_age between 18 and 100).
+   3. Missing Value Imputation: Calculated numerical medians and categorical modes across
+      partitions. Customer age missing values were imputed with the median (44), and
+      missing documentation status was imputed with the mode ("Complete").
+
+Q20: What new features did you engineer?
+A: In `src/feature_engineering.py`, I created domain-specific insurance risk ratios:
+   1. `claim_to_premium_ratio` = claim_amount / annual_premium.
+      Higher ratio indicates high financial leverage and elevated loss risk.
+   2. `claim_to_estimate_ratio` = claim_amount / repair_or_treatment_estimate.
+      Values > 1.25 signal potential estimate inflation or fraud.
+   3. `policy_tenure_category`: Categorized into New (<12m), Established (12-48m),
+      and Mature (>48m).
+   4. `submission_delay_category`: Binned into Immediate (<=3d), Normal (4-14d),
+      and Delayed (>14d). Excessive delay strongly correlates with rejection.
+   5. `previous_claim_category`: Grouped into None (0), Few (1-2), and Frequent (3+).
+
+Q21: How did you prevent Data Leakage? (VERY IMPORTANT VIVA QUESTION)
+A: Data leakage happens when test set information contaminates model training. I prevented
+   it through three strict measures:
+   1. The dataset was split into 80% Train (96,242 rows) and 20% Test (23,758 rows)
+      using `.randomSplit([0.8, 0.2], seed=42)` BEFORE fitting any ML transformations.
+   2. All StringIndexers and encoders were fit ONLY on the training partition. The fitted
+      PipelineModel was then applied to transform the test partition.
+   3. I strictly excluded unique identifiers (`claim_id`, `policy_id`) and the raw target
+      label (`claim_approval`) from the feature VectorAssembler.
+
+Q22: How does the Spark MLlib Pipeline work?
+A: In `src/model_training.py`, I constructed a unified Spark `Pipeline` with 4 stages:
+   Stage 1: `StringIndexer` converts categorical text columns (e.g., policy_type,
+            documentation_status) into numerical category indices.
+   Stage 2: `StringIndexer` converts the target column `claim_approval` into a binary
+            numeric label (Approved = 1.0, Rejected = 0.0).
+   Stage 3: `OneHotEncoder` converts multi-class categorical indices into binary sparse vectors.
+   Stage 4: `VectorAssembler` combines all continuous features, ratios, and one-hot vectors
+            into a single dense feature vector named `features`.
+   Stage 5: Classifier Estimator (`LogisticRegression` or `RandomForestClassifier`).
+
+Q23: Which machine learning models did you train and compare?
+A: I trained and compared two distributed Spark MLlib classification models:
+   1. Logistic Regression (Baseline linear classifier using L-BFGS optimization).
+   2. Random Forest Classifier (Non-linear ensemble of 20 decision trees, maxDepth 5).
+
+Q24: What were the final model evaluation results? Which model won?
+A: Evaluated on the 23,758-row holdout test set:
+
+   Metric                     Logistic Regression (Winner)    Random Forest
+   -------------------------------------------------------------------------
+   Accuracy                   79.46% (0.7946)                 79.16% (0.7916)
+   Weighted Precision         79.02% (0.7902)                 78.93% (0.7893)
+   Weighted Recall            79.46% (0.7946)                 79.16% (0.7916)
+   Weighted F1-Score          78.69% (0.7869)                 78.02% (0.7802)
+   ROC-AUC                    0.8393                          0.8362
+   PR-AUC                     0.8968                          0.8934
+   Minority Recall (Rejected) 57.96% (4,625 caught)           53.58% (4,275 caught)
+
+   Winner: Logistic Regression was chosen as the champion model. It outperformed
+   Random Forest across every metric: higher ROC-AUC (0.8393 vs 0.8362) and superior
+   minority class recall (57.96% vs 53.58%, capturing 350 more true rejections), while
+   being computationally lighter and having zero tree-depth inference overhead.
+
+Q25: What was the result of your Partitioning Benchmark?
+A: In `src/performance.py`, I executed the full aggregation pipeline across 3 partition
+   configurations (2, 4, and 8 partitions) with 3 iterations each:
+   - 2 Partitions: Median latency = 1.3713 seconds
+   - 4 Partitions: Median latency = 1.1665 seconds (1.18x speedup)
+   - 8 Partitions: Median latency = 0.6667 seconds (2.06x speedup over 2 partitions)
+   Conclusion: Increasing partitions from 2 to 8 allowed Spark to fully saturate all 8
+   available logical CPU cores on the host machine, cutting aggregation latency by half.
+
+Q26: What does your Streamlit Dashboard do?
+A: The Streamlit application (`dashboard/app.py` / `streamlit_app.py`) provides:
+   1. Executive KPI Cards: 120,000 claims, 66.61% approval rate, $2.64B total claimed.
+   2. EDA Visualizations: Interactive breakdown of approvals by policy, severity,
+      documentation status, and payment delinquency.
+   3. Model Benchmark View: ROC curves, confusion matrices, and feature importances.
+   4. Live Prediction Engine: Form where an underwriter inputs claim details and receives
+      real-time approval/rejection probabilities and risk warnings.
+   5. Partition Diagnostics: Interactive latency graphs of cluster partition scaling.
+
+================================================================================
+SECTION 4: TOP 20 TRICKY / TRAP VIVA QUESTIONS & HOW TO ANSWER THEM
+================================================================================
+
+Trap Q1: "Is this running on a real cluster or just a single laptop?"
+Your Answer: "Sir/Ma'am, it runs on Apache Spark using the `local[*]` execution master.
+While physically hosted on a single machine, it genuinely executes distributed Spark
+architecture. Spark initializes a Driver, creates a LocalCluster within the JVM, and
+spawns parallel executor threads matching my CPU cores. Each core processes distinct
+partitions in parallel through Catalyst-optimized DAG execution plans. If deployed to
+an AWS EMR or Databricks multi-node cluster, the exact same PySpark code runs without
+modifying a single line of business logic—only changing the master URL from `local[*]`
+to `yarn` or `k8s`."
+
+Trap Q2: "Why didn't you use Deep Learning (Neural Networks)?"
+Your Answer: "Deep learning models are black-box algorithms and computationally expensive.
+In insurance claim adjudication:
+1. Regulatory Compliance: Insurance regulations (like IRDAI in India or FCRA) require
+   explainability. We must legally justify to the policyholder why a claim was rejected.
+   Logistic Regression and Random Forest provide clear feature coefficients and importance
+   weights.
+2. Tabular Data: For structured tabular data with 120,000 rows, tree-based models and
+   regularized linear models consistently match or outperform deep neural networks with
+   a fraction of the training time and zero GPU dependencies."
+
+Trap Q3: "Why did you care about PR-AUC when ROC-AUC was already 0.8393?"
+Your Answer: "Our target variable has a 67:33 class imbalance. In imbalanced datasets,
+ROC-AUC can be overly optimistic because its False Positive Rate includes True Negatives
+(the majority class). Even if false positives increase, a large number of True Negatives
+keeps FPR low.
+PR-AUC (Precision-Recall AUC) does NOT include True Negatives at all. It focuses solely
+on the minority class. Our PR-AUC of 0.8968 confirms that the model maintains high
+precision across different recall thresholds for the minority Rejected class."
+
+Trap Q4: "What happens if a worker executor crashes during execution?"
+Your Answer: "Spark handles this gracefully via RDD Lineage. The Driver program maintains
+the DAG. If worker node #2 crashes, the Driver detects the heartbeat loss, marks the
+executor dead, and re-schedules only the missing tasks and partitions on another surviving
+worker core or node. The entire job does NOT restart from scratch."
+
+Trap Q5: "What is `spark.sql.shuffle.partitions`? What is its default value?"
+Your Answer: "The default value in Apache Spark is 200. This means whenever a wide
+transformation (like groupBy or join) occurs, Spark shuffles data into 200 partitions.
+For a small or medium dataset on a local machine, 200 partitions creates excessive task
+scheduling overhead because each partition only contains a tiny handful of rows. In our
+project configuration (`src/config.py`), we explicitly tuned `spark.sql.shuffle.partitions`
+to 4 and 8, matching our core count and drastically improving local performance."
+
+Trap Q6: "Why is `df.collect()` dangerous on big data?"
+Your Answer: "`df.collect()` retrieves ALL records from all distributed worker nodes
+and pulls them into the Driver program's single JVM memory. If the dataset has 100 million
+records (say 50 GB), pulling it into a 4 GB Driver RAM will immediately crash the application
+with a `java.lang.OutOfMemoryError`. Instead of `collect()`, we should use actions like
+`.take(n)`, `.show(n)`, or write directly to distributed storage with `.write.parquet()`."
+
+Trap Q7: "What is Py4J overhead? Is Scala Spark faster than PySpark?"
+Your Answer: "For standard DataFrame operations, PySpark has almost ZERO overhead compared
+to Scala because the DataFrame API compiles to the same Catalyst physical execution plan
+inside the JVM.
+However, if you write custom Python UDFs (User-Defined Functions), Spark has to serialize
+data out of the JVM into a Python worker process, execute the Python code, and serialize
+it back into the JVM. This causes serialization overhead. That is why I used native Spark
+SQL functions (`pyspark.sql.functions`) for all feature engineering, keeping all execution
+inside the optimized JVM."
+
+Trap Q8: "What is the difference between a Driver and an Executor?"
+Your Answer:
+- Driver: The master process that runs your `main()` program. It creates the `SparkSession`,
+  converts user code into a DAG, analyzes and optimizes the logical plan, breaks jobs into
+  stages and tasks, and schedules tasks onto executors.
+- Executor: Worker processes running on cluster nodes. They execute individual tasks
+  assigned by the driver, perform computations, store cached partitions in RAM/disk, and
+  send status and results back to the driver.
+
+Trap Q9: "Why did you use VectorAssembler?"
+Your Answer: "Spark MLlib algorithms (like LogisticRegression and RandomForestClassifier)
+do not accept multiple independent columns as inputs like Scikit-Learn does. They expect
+all predictor features to be packed into a single column containing a unified Vector object.
+`VectorAssembler` is the Spark transformer that merges numerical columns, boolean flags,
+and one-hot encoded vectors into that single required `features` vector column."
+
+Trap Q10: "What is Data Skewness in Spark and how do you handle it?"
+Your Answer: "Data skew occurs when data is partitioned unevenly, causing one partition
+to hold 80% of the records while other partitions hold only 5%. This causes the 'straggler
+problem', where 7 CPU cores finish in 1 second, but 1 core takes 2 minutes.
+We handle data skew by:
+1. Salting: Adding random prefixes to the join/group key to spread records evenly.
+2. Using `.repartition()` on a high-cardinality column.
+3. Using Broadcast Joins (`broadcast(df)`) when joining a large DataFrame with a small one."
+
+Trap Q11: "What is the difference between `cache()` and `persist()`?"
+Your Answer:
+- `df.cache()`: Stores the DataFrame in memory with the default storage level `MEMORY_AND_DISK`
+  (deserialized in memory, spills to disk only if memory is full).
+- `df.persist(StorageLevel)`: Gives you granular control over where data is stored. You can
+  specify `MEMORY_ONLY`, `MEMORY_ONLY_SER` (serialized in RAM to save space), `DISK_ONLY`,
+  or replicated across nodes (`MEMORY_AND_DISK_2`).
+- In short: `cache()` is simply `persist()` with the default storage level.
+
+Trap Q12: "How did your project handle missing values during training vs prediction?"
+Your Answer: "During distributed cleaning (`src/data_cleaning.py`), missing numeric values
+were imputed using median values computed via Spark SQL, and missing categorical values
+were filled with the column mode. In the prediction pipeline, missing values are
+automatically handled by the fitted Spark ML pipeline using median fallbacks, ensuring
+the production inference endpoint never crashes on incomplete input forms."
+
+Trap Q13: "What were the most important features in predicting claim rejection?"
+Your Answer: "Based on Random Forest feature importances and Logistic Regression weights:
+1. `policy_active` (An inactive policy almost universally leads to claim rejection).
+2. `documentation_status` (Missing documents drastically reduces approval odds).
+3. `premium_payment_status` (Overdue premiums correlate with high rejection rates).
+4. `claim_to_estimate_ratio` (Claims significantly exceeding the appraisal trigger fraud flags).
+5. `claim_submission_delay` (Delays greater than 30 days trigger strict underwriting scrutiny)."
+
+Trap Q14: "What is the role of `conftest.py` in your testing suite?"
+Your Answer: "`conftest.py` defines a session-scoped Pytest fixture named `spark`.
+Starting a SparkSession spins up a JVM, which takes 10 to 15 seconds. By setting
+`@pytest.fixture(scope='session')`, all 9 unit tests share a single SparkSession across
+the entire test suite instead of creating and destroying a JVM for every single test.
+This cut test suite execution time significantly."
+
+Trap Q15: "What is the difference between Precision and Recall in this project?"
+Your Answer:
+- Precision (for Rejected claims): Out of all claims my model flagged as Rejected, what
+  percentage were ACTUALLY rejected? (75.19% for Logistic Regression).
+- Recall (for Rejected claims): Out of all claims that were TRULY rejected in the dataset,
+  what percentage did my model successfully catch? (57.96% for Logistic Regression).
+In insurance, high Recall on Rejected claims is vital to prevent unauthorized payouts.
+
+Trap Q16: "What is Broadcast Join in Spark?"
+Your Answer: "When joining a large DataFrame (100 GB) with a small DataFrame (10 MB),
+a standard join shuffles both DataFrames across all nodes. With a Broadcast Join,
+Spark copies the small DataFrame to the RAM of every worker node. Each worker then
+performs a local hash join without any network shuffling of the large DataFrame.
+It is invoked using `pyspark.sql.functions.broadcast(small_df)`."
+
+Trap Q17: "What is Whole-Stage Code Generation in Spark Tungsten?"
+Your Answer: "Traditional database engines evaluate queries row-by-row using virtual
+function calls. Spark's Project Tungsten uses Whole-Stage Code Generation to collapse
+an entire chain of pipeline stages into a single optimized Java function, compiling it
+to raw bytecode at runtime. This eliminates virtual function dispatch overhead, keeps
+data in CPU L1/L2 caches, and drastically boosts execution speed."
+
+Trap Q18: "Why did you use RFC 4180 format for your CSV dataset?"
+Your Answer: "RFC 4180 is the standard Internet specification for CSV files. It ensures
+proper quoting of strings containing commas, standard CRLF line breaks, and consistent
+encoding (UTF-8). This guarantees that Spark's distributed CSV reader parses columns
+cleanly without row-boundary corruption across split partitions."
+
+Trap Q19: "How is your model persisted to disk?"
+Your Answer: "Spark MLlib models implement `MLWritable`. In `src/model_training.py`,
+I saved the trained pipeline using:
+`pipeline_model.write().overwrite().save(path)`
+This writes two components:
+1. `metadata/`: A JSON file describing the pipeline stages, parameters, and schema.
+2. `stages/`: Parquet files storing model weights, decision tree split thresholds,
+   and string index mappings.
+The model can be reloaded in production using `PipelineModel.load(path)`."
+
+Trap Q20: "What are the limitations of your project?"
+Your Answer:
+"1. Distributed Scope: The project was executed locally on a multi-core CPU using
+    `local[*]` rather than an elastic multi-node physical cloud cluster (e.g., AWS EMR).
+ 2. Dataset Realism: The dataset is synthetic. Real-world claims involve unstructured
+    doctor handwriting, clinical notes, and police FIR PDFs requiring NLP/OCR.
+ 3. Storage Layer: We utilized local file storage rather than a true distributed
+    object store like Hadoop HDFS, Amazon S3, or Apache Iceberg."
+
+================================================================================
+SECTION 5: RAPID-FIRE ONE-LINER DEFINITIONS (FLASHCARDS)
+================================================================================
+
+1.  DAG (Directed Acyclic Graph): A graph of sequential computation stages with no loops.
+2.  Driver: The master process coordinating Spark execution and task scheduling.
+3.  Executor: The worker process executing tasks and caching data partitions.
+4.  Task: The smallest unit of execution in Spark, run on a single partition.
+5.  Stage: A group of tasks that can execute in parallel without a data shuffle.
+6.  Job: A sequence of stages triggered by an Action.
+7.  Narrow Dependency: Child partition depends on only one parent partition (No shuffle).
+8.  Wide Dependency: Child partition depends on multiple parent partitions (Requires shuffle).
+9.  Py4J: The gateway bridge allowing Python to call Java methods in the Spark JVM.
+10. Catalyst: Spark SQL's rule-based and cost-based query optimizer.
+11. Tungsten: Spark's in-memory execution engine optimizing hardware CPU and memory.
+12. VectorAssembler: Feature transformer combining raw columns into a single feature vector.
+13. StringIndexer: Encodes string labels into category index numbers (0.0, 1.0, 2.0).
+14. OneHotEncoder: Maps categorical index numbers to binary sparse vectors.
+15. StructType: Explicit programmatic schema definition for Spark DataFrames.
+16. Predicate Pushdown: Catalyst optimization that filters data before loading/joining.
+17. Broadcast Variable: Read-only variable cached on every worker node to avoid re-sending.
+18. Accumulator: Write-only shared variable used for distributed counters and metrics.
+19. ROC-AUC: Area under the Receiver Operating Characteristic curve (Discrimination power).
+20. PR-AUC: Area under the Precision-Recall curve (Best for imbalanced target classes).
+
+================================================================================
+SECTION 6: EMERGENCY VIVA STRATEGY (WHAT TO DO IF YOU ARE STUCK)
+================================================================================
+
+1. If you don't know the answer to a theoretical question:
+   Say: "Sir/Ma'am, I am currently unable to recall the exact theoretical definition of
+   that specific concept, but in my project implementation, I handled data partitioning
+   and transformations using Spark's Catalyst optimizer. May I explain how that worked
+   in my pipeline?"
+   -> This politely pivots the examiner back to code you actually know!
+
+2. If the examiner asks about a tool you didn't use (e.g., Kafka, Kubernetes):
+   Say: "In this phase of the project, our primary focus was batch distributed data
+   engineering and MLlib pipeline classification using Apache Spark on local[*]. However,
+   for future production deployment, integrating Apache Kafka for streaming claim ingestion
+   and Kubernetes for elastic executor orchestration would be the ideal next architectural step."
+
+3. Body Language & Tone:
+   - Speak with clear, steady pacing.
+   - Do not rush or speak in broken single words. Use full sentences.
+   - Maintain eye contact, sit upright, and keep your project repository or PDF report
+     open in front of you.
+   - If asked to show proof: Open `reports/INT315_Project_Report.pdf` or show the
+     GitHub repository at `https://github.com/Rishabh2728/cluster`.
+
+================================================================================
+END OF VIVA PREPARATION GUIDE — BEST OF LUCK, RISHABH!
+================================================================================
